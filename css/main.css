@@ -427,3 +427,21 @@ DELEGATES & SPONSORS
 .section-header {
     margin: 2.5em 0 1.5em 0;
 }
+
+.about-list {
+    width: 100%;
+    list-style: none;
+}
+
+.about-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-image {
+    border: solid 1px white;
+    padding: 2em;
+    border-radius: 40%;
+}
