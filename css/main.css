@@ -339,54 +339,47 @@ DELEGATES & SPONSORS
 
 .navigation {
     z-index: 2;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    position: fixed;
-    top: 0;
-    left: 0;
     background-color: rgba(82, 82, 81, 0.0);
     width: 100%;
 }
 
-.nav-item {
+.nav-link {
     color: white;
-    float: left;
-    height: 60px;
-    display: flex;
+}
+
+.nav-link:hover {
+    color: #b3d4fc;
+}
+
+.navbar-nav {
     align-items: center;
 }
 
-.nav-link {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 19px 21px;
-    text-decoration: none;
-}
-
-/* Change the link color to #111 (black) on hover */
-.active {
-    background-color: #358dbd;
-}
-
-.live-logo {
-    height: 30px;
-    margin: 0 10px;
-}
-
-.live-title {
+#register {
     font-size: 1.35em;
+    border-radius: 25px;
+    border: 2px solid white;
+    color: white;
 }
 
-.links {
-    float: right;
+
+#register:hover {
+    font-size: 1.35em;
+    border-radius: 25px;
+    background-color: white;
+    border: 2px solid white;
+    color: #358dbd!important;
 }
 
+
+/*Jumbotron*/
 .jumbotron {
     height: 100%;
     background: url("../img/background.jpg");
+    background-position: center;
+    /* Make the background image cover the area of the <div>, and clip the excess */
+    background-size: cover;
+
     margin: 0;
 }
 
@@ -405,13 +398,32 @@ DELEGATES & SPONSORS
 }
 
 .jumbotron-items {
+    max-width: 100%;
     margin: 0 auto;
 }
 .jumbotron-title {
     margin: 0 auto;
+    overflow:hidden;
     display: table;
+    font-size: 3em;
+    font-weight: 400;
+    text-align: center;
 }
 
 .tagline {
     text-align: center;
+}
+
+.expand {
+    align-self: flex-start;
+    padding: .25rem .75rem;
+    font-size: 1.25rem;
+    line-height: 1;
+    background: 0 0;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+}
+
+.section-header {
+    margin: 2.5em 0 1.5em 0;
 }
