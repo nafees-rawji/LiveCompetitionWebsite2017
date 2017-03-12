@@ -428,6 +428,7 @@ DELEGATES & SPONSORS
     margin: 2.5em 0 1.5em 0;
 }
 
+/*About*/
 .about-list {
     width: 100%;
     list-style: none;
@@ -444,4 +445,37 @@ DELEGATES & SPONSORS
     border: solid 1px white;
     padding: 2em;
     border-radius: 40%;
+}
+
+/*Sponsors*/
+#sponsors {
+    /*background-color: #afafaf;*/
+}
+
+
+.sponsors-gallery {
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.sponsor {
+    flex: none;
+    box-sizing: content-box;
+    /*background-color: rgba(10, 88, 155, 0.3);*/
+    margin: 20px;
+    width: 200px;
+    height: 200px;
+    border: solid 20px rgba(0, 0 , 0,  0);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+/*Contact*/
+
+#contact {
+    /*background-color: #444444;*/
 }
