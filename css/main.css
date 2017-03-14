@@ -290,6 +290,39 @@ textarea {
         page-break-after: avoid;
     }
 }
+#back-to-top {
+    background: none;
+
+    margin: 0;
+
+    position: fixed;
+
+    bottom: 20px;
+
+    right: 20px;
+
+    width: 70px;
+
+    height: 70px;
+
+    z-index: 100;
+
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+
+    border-radius: 50%;
+    text-decoration: none;
+    background-color: #00acd3;
+}
+
+#back-to-top p {
+    margin: 0 auto;
+    font-size: 2.5em;
+    color: #ffffff;
+    text-align: center;
+}
 /********************************************
 HOMEPAGE
 **********************************************/
@@ -501,3 +534,16 @@ DELEGATES & SPONSORS
     background-color: #00acd3;
 }
 
+
+#sponsors-integration {
+    background-color: #777777;
+}
+
+#sponsors-past {
+    background-color: #a0a0a0;
+}
+
+.card-img-top {
+    height: 128px;
+    width: 128px;
+}
