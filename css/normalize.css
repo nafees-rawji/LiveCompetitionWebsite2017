@@ -257,6 +257,8 @@ textarea {
   color: inherit; /* 1 */
   font: inherit; /* 2 */
   margin: 0; /* 3 */
+    outline: none;
+
 }
 
 /**
@@ -266,6 +268,8 @@ textarea {
 button {
   overflow: visible;
 }
+
+
 
 /**
  * Address inconsistent `text-transform` inheritance for `button` and `select`.

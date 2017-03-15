@@ -10,6 +10,8 @@
    Base styles: opinionated defaults
    ========================================================================== */
 
+
+button:active {outline:0 !important;}
 html, body {
     background-color: #1a1a1a;
     width: 100%;
@@ -314,14 +316,23 @@ textarea {
 
     border-radius: 50%;
     text-decoration: none;
+    background-color: #358dbd;
+}
+
+#back-to-top:hover {
     background-color: #00acd3;
 }
 
-#back-to-top p {
+#back-to-top a {
+    text-decoration: none;
     margin: 0 auto;
     font-size: 2.5em;
     color: #ffffff;
     text-align: center;
+}
+
+#back-to-top a:hover {
+    text-decoration: none;
 }
 /********************************************
 HOMEPAGE
@@ -372,7 +383,7 @@ DELEGATES & SPONSORS
 
 .navigation {
     z-index: 2;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0);
     width: 100%;
 }
 
@@ -382,6 +393,10 @@ DELEGATES & SPONSORS
 
 .nav-link:hover {
     color: #01799a;
+}
+
+.nav-link:visited {
+    color: white;
 }
 
 .navbar-nav {
