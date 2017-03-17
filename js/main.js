@@ -1,10 +1,22 @@
 $(document).ready(function(){
     $('a').smoothScroll();
 
+    // // you have to set the heights for all the sections using jquery for the fade transitions to work
+    // $('.section').each(function () {
+    //     $(this).height($(this).height());
+    // });
+    //
+    //
+    // $(window).resize(function () {
+    //     // you have to set the heights for all the sections using jquery for the fade transitions to work
+    //     $('.section').each(function () {
+    //         $(this).height("auto");
+    //         $(this).height($(this).height());
+    //     });
+    // });
 
     var scroll = 0;
     var jumbotron = $('.jumbotron');
-    var offset = jumbotron.offset();
     if (jumbotron.length != 0){
         $(document).scroll(function() {
             //get how far the user has scrolled
@@ -16,5 +28,15 @@ $(document).ready(function(){
             }
         });
     }
+
+    $('.switch-content-button').click(function () {
+        var text = $(this).text();
+        $(this).text($(this).attr('switch-text'));
+        $(this).attr('switch-text', text);
+        var parent = $(this).parents(".section");
+        $(".section-default", parent).slideToggle(1000);
+        $('.section-alt', parent).slideToggle(1000);
+
+    });
 });
 
