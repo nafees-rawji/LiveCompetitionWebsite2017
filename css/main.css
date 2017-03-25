@@ -474,6 +474,10 @@ DELEGATES & SPONSORS
     margin: 2.5em 0 1.5em 0;
 }
 
+.section-alt {
+    display: none;
+}
+
 /*About*/
 .about-list {
     width: 100%;

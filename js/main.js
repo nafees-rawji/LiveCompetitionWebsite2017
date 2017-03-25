@@ -34,8 +34,11 @@ $(document).ready(function(){
         $(this).text($(this).attr('switch-text'));
         $(this).attr('switch-text', text);
         var parent = $(this).parents(".section");
-        $(".section-default", parent).slideToggle(1000);
-        $('.section-alt', parent).slideToggle(1000);
+        $('html, body').stop().animate({
+            scrollTop: (parent.offset().top - 75)
+        }, 1200);
+        $(".section-default", parent).slideToggle(1000, "linear");
+        $('.section-alt', parent).slideToggle(1000, "linear");
 
     });
 });
