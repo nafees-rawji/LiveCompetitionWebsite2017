@@ -11,6 +11,8 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,300,400" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/flc.css">
+    <link rel="stylesheet" href="css/animate.css">
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
 <body>
@@ -22,38 +24,10 @@
 
 <a id="back-to-top" href="#home"><p>⬆</p></a>
 
-<nav class="navbar navbar-toggleable-xl fixed-top navigation hidden-sm-down">
-    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="true" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon text-white">&#9776</span>
-    </button>
-    <a class="navbar-brand text-white" href="#">
-        <img src="img/livelogo.png" width="30" height="30" class="d-inline-block align-top" alt="live-logo">
-        Live Competition 2017
-    </a>
-    <div class="collapse navbar-collapse ml-auto" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-                <a class="nav-link " href="#home">Home</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#about">Why Live</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#sponsors-integration">Integration</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link mr-1" href="#sponsors-past">Past Sponsors</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link emphasized-nav-item" href="#contact">Contact</a>
-            </li>
-        </ul>
-    </div>
-</nav>
 
 <!--MOBILE NAV-->
 
-<nav class="navbar navbar-toggleable-xl fixed-top navigation hidden-md-up">
+<nav class="navbar navbar-toggleable-xl fixed-top navigation py-3">
     <button class="expand navbar-toggler-right" type="button">
         <span class="navbar-toggler-icon text-white d-block">&#9776</span>
     </button>
@@ -63,23 +37,21 @@
     </a>
 </nav>
 
-<div class="overlay"></div>
-
-<div class="jumbotron jumbotron-main jumbotron-fluid" id="home">
+<div class="jumbotron jumbotron-flc jumbotron-fluid mb-0 mt-5" id="home">
     <div class="container">
 
         <div class="jumbotron-items">
             <img class="d-table mx-auto my-2 hidden-md-up" src="img/livelogo.png">
-            <h1 class="text-white jumbotron-title"><img class="hidden-sm-down" src="img/livelogo.png">      Live Competition 2017</h1>
+            <h1 class="text-white jumbotron-title"><img class="hidden-sm-down mr-2" src="img/livelogo.png">LIVE FLC 2017</h1>
             <h3 class="text-white tagline">Our, Awesome, Tagline</h3>
         </div>
     </div>
 </div>
 
-<div id="about" class="section py-2">
+<div id="about" class="section py-2 animated">
     <div id="about-content" class="section-default">
         <div class="container-fluid">
-            <h1 class="text-white text-center section-header">Why Live?</h1>
+            <h1 class="text-white text-center section-header">What Is Live FLC?</h1>
             <ul class="about-list px-0">
                 <li class="col-12 col-md-10 col-lg-8 my-5 d-table mx-auto">
                     <div class="about-items d-inline d-md-flex">
@@ -113,41 +85,17 @@
     </div>
 </div>
 
-
-<div id="sponsors-integration" class="section py-2">
+<div id="attend" class="section py-2 animated">
     <div class="section-default">
         <div class="container-fluid">
-            <h1 class="text-white text-center section-header">Sponsors Integration</h1>
-            <div class="card-group mx-auto mb-5 col-lg-10 col-xl-8">
-                <div class="card py-3">
-                    <img class="card-img-top mx-auto" src="img/integration1.png" alt="Card image cap">
-                    <div class="card-block">
-                        <h4 class="text-center card-title">Thing 1</h4>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    </div>
-                </div>
-                <div class="card py-3">
-                    <img class="card-img-top mx-auto" src="img/integration1.png" alt="Card image cap">
-                    <div class="card-block">
-                        <h4 class="text-center card-title">Thing 2</h4>
-                        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                    </div>
-                </div>
-                <div class="card py-3">
-                    <img class="card-img-top mx-auto" src="img/integration1.png" alt="Card image cap">
-                    <div class="card-block">
-                        <h4 class="text-center card-title">Thing 3</h4>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <button class="general-button switch-content-button" switch-text="Sponsor Integration ⬇">Who Are We ⬆</button>
-    <div class="section-alt">
-        <div class="container-fluid">
-            <h1 class="text-white text-center section-header">Why Live?</h1>
+            <h1 class="text-white text-center section-header">Why Should You Attend?</h1>
             <ul class="about-list px-0">
+                <li class="col-12 col-md-10 col-lg-8 my-5 d-table mx-auto">
+                    <div class="about-items d-inline d-md-flex">
+                        <img class="d-table mr-4 my-2 mx-auto about-image" src="img/about1.png">
+                        <p class="ml-md-5 mb-0 text-white d-inline-block">JLorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulv</p>
+                    </div>
+                </li>
                 <li class="col-12 col-md-10 col-lg-8 my-5 d-table mx-auto">
                     <div class="about-items d-inline d-md-flex">
                         <img class="d-table mr-4 my-2 mx-auto about-image" src="img/about1.png">
@@ -159,7 +107,8 @@
     </div>
 </div>
 
-<div id="sponsors-past" class="section py-2">
+
+<div id="sponsors-past" class="section py-2 animated">
     <div class="container-fluid">
         <h1 class="text-white text-center section-header">Past Sponsors</h1>
         <div class="sponsors-gallery col-lg-10 col-xl-8">
@@ -181,7 +130,7 @@
     <button class="general-button switch-content-button" switch-text="Sponsors ⬇">Who's Speaking ⬆</button>
 </div>
 
-<div id="contact" class="section py-2">
+<div id="contact" class="section py-2 animated">
     <div class="container-fluid mb-5">
         <h1 class="text-white text-center section-header">Contact</h1>
         <form class="mx-auto d-table col-lg-10 col-xl-7">
@@ -210,6 +159,7 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 <script src="js/plugins.js"></script>
 <script src="js/main.js"></script>
+<script src="js/flc.js"></script>
 <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
 <script>
     (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=

@@ -1,0 +1,28 @@
+html, body {
+    height: 100%;
+    background-color: #00acd3;
+}
+
+.jumbotron-flc {
+    background-color: transparent;
+}
+
+#sponsors-past {
+    background-color: transparent;
+}
+
+#back-to-top {
+    background-color: transparent;
+}
+
+.general-button {
+    background-color: #ad0f37;
+}
+
+.general-button:hover {
+    background-color: #9d0e44;
+}
+
+.section {
+    opacity: 0;
+}
