@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    $('a').smoothScroll();
+    $('.nav-link').smoothScroll();
 
     // // you have to set the heights for all the sections using jquery for the fade transitions to work
     // $('.section').each(function () {

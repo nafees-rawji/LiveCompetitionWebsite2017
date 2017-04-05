@@ -1,13 +1,13 @@
 html, body {
     height: 100%;
-    background-color: #00acd3;
+    background-color: #0198ba;
 }
 
 .jumbotron-flc {
     background-color: transparent;
 }
 
-#sponsors-past {
+#gallery {
     background-color: transparent;
 }
 
@@ -25,4 +25,32 @@ html, body {
 
 .section {
     opacity: 0;
+}
+
+hr {
+    border: none;
+    height: 2px;
+    /* Set the hr color */
+    color: #fff; /* old IE */
+    background-color: #fff; /* Modern Browsers */
+}
+
+.color-accent {
+    color: #ad0f37;
+}
+
+h1 {
+    height:auto;
+}
+.previous-years-gallery {
+    max-width: 100%;
+}
+.gallery-container {
+    max-width: 90%;
+
+}
+
+.img-fluid{
+    max-width: 90vh;
+    height: 70vh;
 }

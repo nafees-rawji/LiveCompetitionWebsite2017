@@ -1,11 +1,11 @@
-$('#sponsors-past').appear().on('appear', function (event, $all_appeared_elements) {
+$('#gallery').appear().on('appear', function (event, $all_appeared_elements) {
     console.log("Appeared");
-    $("#sponsors-past").addClass("lightSpeedIn");
+    $("#gallery").addClass("lightSpeedIn");
 });
 
-$('#about').appear().on('appear', function (event, $all_appeared_elements) {
+$('#flc').appear().on('appear', function (event, $all_appeared_elements) {
     console.log("Appeared");
-    $("#about").addClass("bounceIn");
+    $("#flc").addClass("bounceIn");
 });
 
 $('#contact').appear().on('appear', function (event, $all_appeared_elements) {
@@ -19,3 +19,14 @@ $('#attend').appear().on('appear', function (event, $all_appeared_elements) {
 });
 
 $.force_appear();
+
+$('.previous-years-gallery').slick({
+    dots: true,
+    adaptiveWidth: true,
+    infinite: true,
+    speed: 500,
+    fade: true,
+    cssEase: 'linear'
+});
+
+$('a').smoothScroll();

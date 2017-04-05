@@ -9,10 +9,16 @@
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <!-- Place favicon.ico in the root directory -->
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,300,400" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick-theme.css"/>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/flc.css">
     <link rel="stylesheet" href="css/animate.css">
+
+
+
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
 <body>
@@ -21,23 +27,32 @@
 <![endif]-->
 
 <!--⬇ -->
-
+<div id="home" style="position: absolute; top: 0;" href="#top"></div>
 <a id="back-to-top" href="#home"><p>⬆</p></a>
 
 
-<!--MOBILE NAV-->
-
-<nav class="navbar navbar-toggleable-xl fixed-top navigation py-3">
-    <button class="expand navbar-toggler-right" type="button">
-        <span class="navbar-toggler-icon text-white d-block">&#9776</span>
+<nav class="navbar navbar-toggleable-md bg-inverse  navigation fixed-top py-3 py-lg-1">
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon text-white">&#9776</span>
     </button>
     <a class="navbar-brand text-white py-0" href="#">
         <img src="img/livelogo.png" width="30" height="30" class="d-inline-block align-top" alt="live-logo">
         Live Competition 2017
     </a>
+
+    <div class="collapse navbar-collapse float-right" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+                <a class="nav-link " href="#home">Home</a>
+                <a class="nav-link" href="#flc">FLC</a>
+                <a class="nav-link" href="#attend">5 Ws</a>
+                <a class="nav-link mr-1" href="#gallery">Gallery</a>
+                <a class="nav-link emphasized-nav-item p-3" href="#contact">Contact</a>
+        </ul>
+
+    </div>
 </nav>
 
-<div class="jumbotron jumbotron-flc jumbotron-fluid mb-0 mt-5" id="home">
+<div class="jumbotron jumbotron-flc jumbotron-fluid mb-0"  style="margin-top: 100px;">
     <div class="container">
 
         <div class="jumbotron-items">
@@ -48,58 +63,67 @@
     </div>
 </div>
 
-<div id="about" class="section py-2 animated">
+<div id="flc" class="section py-2 animated">
     <div id="about-content" class="section-default">
         <div class="container-fluid">
-            <h1 class="text-white text-center section-header">What Is Live FLC?</h1>
+            <h1 class="text-white text-center section-header">Future Leaders Challenge 2017 </h1>
             <ul class="about-list px-0">
-                <li class="col-12 col-md-10 col-lg-8 my-5 d-table mx-auto">
+                <li class="col-12 col-md-10 col-lg-8 my-5 ml-0 d-table mx-auto">
                     <div class="about-items d-inline d-md-flex">
-                        <img class="d-table mr-4 my-2 mx-auto about-image" src="img/about1.png">
-                        <p class="ml-md-5 mb-0 text-white d-inline-block">JLorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulv</p>
+                        <p class="mb-0 text-white d-inline-block">Imagine being a part of a senior management team of a developing business that is currently taking the corporate world by storm. As top management, you have full autonomy in making decisions regarding profits and market share, and will compete head to head with lead competitors of the industry. Now imagine, you are given the opportunity to do all of that in the next few weeks…
+                        </p>
                     </div>
                 </li>
-                <li class="col-12 col-md-10 col-lg-8 my-5 d-table mx-auto">
+                <li class="col-12 col-md-10 col-lg-8 my-5 ml-0 d-table mx-auto">
                     <div class="about-items d-inline d-md-flex">
-                        <img class="d-table mr-4 my-2 mx-auto about-image" src="img/about1.png">
-                        <p class="ml-md-5 mb-0 text-white d-inline-block">JLorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulv</p>
+                        <p class="mb-0 text-white d-inline-block">The Future Leaders Challenge (FLC) is an innovative business case competition designed to give high school students with a passion for business the opportunity to face the risk, challenges, and rewards of managing their own companies. As the high school level counterpart of the University of Toronto’s LIVE Competition, FLC is focused on developing both the personal and professional skills like no other competition. Register by April 30, 2017 to secure your spot at FLC 2017.</p>
                     </div>
                 </li>
             </ul>
         </div>
 
     </div>
-    <button class="general-button switch-content-button" switch-text="Why Live ⬇">Who Are We ⬆</button>
-    <div id="who-are-we-content" class="section-alt">
-        <div class="container-fluid">
-            <h1 class="text-white text-center section-header">Why Live?</h1>
-            <ul class="about-list px-0">
-                <li class="col-12 col-md-10 col-lg-8 my-5 d-table mx-auto">
-                    <div class="about-items d-inline d-md-flex">
-                        <img class="d-table mr-4 my-2 mx-auto about-image" src="img/about1.png">
-                        <p class="ml-md-5 mb-0 text-white d-inline-block">JLorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulv</p>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </div>
 </div>
+<hr class="col-12 col-md-10 col-lg-8 mx-auto mt-5">
 
 <div id="attend" class="section py-2 animated">
     <div class="section-default">
         <div class="container-fluid">
-            <h1 class="text-white text-center section-header">Why Should You Attend?</h1>
+            <h1 class="text-white text-center section-header">5Ws to take the W</h1>
             <ul class="about-list px-0">
                 <li class="col-12 col-md-10 col-lg-8 my-5 d-table mx-auto">
-                    <div class="about-items d-inline d-md-flex">
-                        <img class="d-table mr-4 my-2 mx-auto about-image" src="img/about1.png">
-                        <p class="ml-md-5 mb-0 text-white d-inline-block">JLorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulv</p>
+                    <div class="about-items d-flex flex-column">
+                        <h2 class="color-accent ">WHO</h2>
+                        <p class="mb-0 text-white">FLC is open to students in grade 11 or 12 in high schools all across Canada. Delegates compete in teams of 4 to take on the role of a senior management team.</p>
                     </div>
                 </li>
                 <li class="col-12 col-md-10 col-lg-8 my-5 d-table mx-auto">
-                    <div class="about-items d-inline d-md-flex">
-                        <img class="d-table mr-4 my-2 mx-auto about-image" src="img/about1.png">
-                        <p class="ml-md-5 mb-0 text-white d-inline-block">JLorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulv</p>
+                    <div class="about-items d-flex flex-column">
+                        <h2 class="color-accent ">WHAT</h2>
+                        <p class="mb-0 text-white">As one of Canada’s largest multidisciplinary case competitions, FLC gives you the opportunity to explore various fields of business such as accounting, finance, human resources, and marketing, which is not only a great way to demonstrate your strengths, but the ability to simultaneously learn about the countless opportunities in the world of business.</p>
+                    </div>
+                </li>
+                <li class="col-12 col-md-10 col-lg-8 my-5 d-table mx-auto">
+                    <div class="about-items d-flex flex-column">
+                        <h2 class="color-accent ">WHERE</h2>
+                        <p class="mb-0 text-white">University of Toronto Scarborough – Instructional Centre</p>
+                    </div>
+                </li>
+                <li class="col-12 col-md-10 col-lg-8 my-5 d-table mx-auto">
+                    <div class="about-items d-flex flex-column">
+                        <h2 class="color-accent ">WHEN</h2>
+                        <p class="mb-0 text-white">Saturday May 13, 2017 from 9:00am to 5:30pm</p>
+                    </div>
+                </li>
+                <li class="col-12 col-md-10 col-lg-8 my-5 d-table mx-auto">
+                    <div class="about-items d-flex flex-column">
+                        <h2 class="color-accent ">WHY</h2>
+                        <ul class="mr-3">
+                            <li class="mb-0 text-white">Apply your academic knowledge to a real life business simulation</li>
+                            <li class="mb-0 text-white">Compete for a chance to win $300 and a mentorship opportunity with senior students at UTSC</li>
+                            <li class="mb-0 text-white">Listen to upper year students at the university share their tips and tricks for a smooth transition into university</li>
+                            <li class="mb-0 text-white">Add it to your resume! </li>
+                        </ul>
                     </div>
                 </li>
             </ul>
@@ -107,27 +131,32 @@
     </div>
 </div>
 
+<hr class="col-12 col-md-10 col-lg-8 mx-auto mt-5">
 
-<div id="sponsors-past" class="section py-2 animated">
-    <div class="container-fluid">
-        <h1 class="text-white text-center section-header">Past Sponsors</h1>
-        <div class="sponsors-gallery col-lg-10 col-xl-8">
-            <div class="sponsor" style='background-image: url("img/sponsor_logo_1.png");'>
+<div id="gallery" class="section py-2 animated mb-4">
+    <div class="container-fluid gallery-container">
+        <h1 class="text-white text-center section-header">Photos From FLC 2015 / 2016</h1>
+        <div class="previous-years-gallery col-lg-10 col-xl-8 mx-auto">
+            <div>
+                <img class="mx-auto img-fluid" src="img/flc/flcphoto1.jpg">
             </div>
-            <div class="sponsor" style='background-image: url("img/sponsor_logo_1.png");'>
+            <div>
+                <img class="mx-auto img-fluid" src="img/flc/flcphoto2.jpg">
             </div>
-            <div class="sponsor" style='background-image: url("img/sponsor_logo_1.png");'>
+            <div>
+                <img class="mx-auto img-fluid" src="img/flc/flcphoto3.jpg">
             </div>
-            <div class="sponsor" style='background-image: url("img/sponsor_logo_1.png");'>
+            <div>
+                <img class="mx-auto img-fluid" src="img/flc/flcphoto4.jpg">
             </div>
-            <div class="sponsor" style='background-image: url("img/sponsor_logo_1.png");'>
+            <div>
+                <img class="mx-auto img-fluid" src="img/flc/flcphoto5.jpg">
             </div>
-            <div class="sponsor" style='background-image: url("img/sponsor_logo_1.png");'>
+            <div>
+                <img class="mx-auto img-fluid" src="img/flc/flcphoto6.jpg">
             </div>
-
         </div>
     </div>
-    <button class="general-button switch-content-button" switch-text="Sponsors ⬇">Who's Speaking ⬆</button>
 </div>
 
 <div id="contact" class="section py-2 animated">
@@ -152,13 +181,14 @@
     </div>
 </div>
 
-<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script
+    src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
 <script src="js/plugins.js"></script>
-<script src="js/main.js"></script>
+<!--<script src="js/main.js"></script>-->
 <script src="js/flc.js"></script>
 <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
 <script>
