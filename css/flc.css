@@ -1,6 +1,8 @@
 html, body {
     height: 100%;
-    background-color: #0198ba;
+    width: 100%;
+    background-color: #00aef2;
+    font-size: 1.1em;
 }
 
 .jumbotron-flc {
@@ -28,6 +30,7 @@ html, body {
 }
 
 hr {
+    /*max-width: 100% !important;*/
     border: none;
     height: 2px;
     /* Set the hr color */
@@ -36,7 +39,7 @@ hr {
 }
 
 .color-accent {
-    color: #ad0f37;
+    color: #fff;
 }
 
 h1 {
@@ -51,6 +54,41 @@ h1 {
 }
 
 .img-fluid{
-    max-width: 90vh;
-    height: 70vh;
+    /*max-width: 90vh;*/
+    max-height: 70vh;
+}
+
+.navigation {
+    max-width: 100%;
+}
+
+#back-to-top {
+    border: 1px solid white;
+}
+#back-to-top:hover, #back-to-top:hover p {
+    border-color: #ad598b;
+    background-color: transparent;
+    color: #ad598b;
+}
+
+#register-button {
+    font-weight: normal;
+    background-color: #292B2C;
+}
+#register-button:hover {
+    background-color: #01799a;
+    color: white;
+}
+
+#end-register-button {
+    background-color: #ad598b;
+    color: #fff;
+}
+
+#end-register-button:hover {
+    background-color: #934c76;
+}
+
+li {
+    list-style: none;
 }

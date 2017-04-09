@@ -28,16 +28,17 @@
 
 <!--⬇ -->
 <div id="home" style="position: absolute; top: 0;" href="#top"></div>
-<a id="back-to-top" href="#home"><p>⬆</p></a>
+<a id="back-to-top" class="rounded-circle hidden-md-down" href="#home"><p>⬆</p></a>
 
 
-<nav class="navbar navbar-toggleable-md bg-inverse  navigation fixed-top py-3 py-lg-1">
+<nav class="navbar navbar-toggleable-md bg-inverse  navigation fixed-top py-3 py-lg-2">
     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon text-white">&#9776</span>
     </button>
     <a class="navbar-brand text-white py-0" href="#">
-        <img src="img/livelogo.png" width="30" height="30" class="d-inline-block align-top" alt="live-logo">
-        Live Competition 2017
+        <img src="img/livelogo.png" width="30" height="30" class="d-inline-block align-top mr-2" alt="live-logo">
+        <!--Live Competition 2017-->
+        FLC 2017
     </a>
 
     <div class="collapse navbar-collapse float-right" id="navbarSupportedContent">
@@ -45,8 +46,11 @@
                 <a class="nav-link " href="#home">Home</a>
                 <a class="nav-link" href="#flc">FLC</a>
                 <a class="nav-link" href="#attend">5 Ws</a>
-                <a class="nav-link mr-1" href="#gallery">Gallery</a>
-                <a class="nav-link emphasized-nav-item p-3" href="#contact">Contact</a>
+                <!--<a class="nav-link mr-1" href="#gallery">Gallery</a>-->
+                <a class="nav-link" href="#contact">Contact</a>
+                <button id="register-button" type="button" class="nav-link emphasized-nav-item p-2" data-toggle="modal" data-target="#register">Register</button>
+
+            <!--<a class="nav-link emphasized-nav-item p-2" href="#register">Register</a>-->
         </ul>
 
     </div>
@@ -56,9 +60,7 @@
     <div class="container">
 
         <div class="jumbotron-items">
-            <img class="d-table mx-auto my-2 hidden-md-up" src="img/livelogo.png">
-            <h1 class="text-white jumbotron-title"><img class="hidden-sm-down mr-2" src="img/livelogo.png">LIVE FLC 2017</h1>
-            <h3 class="text-white tagline">Our, Awesome, Tagline</h3>
+            <h1 class="text-white jumbotron-title">Future Leaders Challenge 2017</h1>
         </div>
     </div>
 </div>
@@ -66,7 +68,7 @@
 <div id="flc" class="section py-2 animated">
     <div id="about-content" class="section-default">
         <div class="container-fluid">
-            <h1 class="text-white text-center section-header">Future Leaders Challenge 2017 </h1>
+            <h1 class="text-white text-center section-header">What is FLC?</h1>
             <ul class="about-list px-0">
                 <li class="col-12 col-md-10 col-lg-8 my-5 ml-0 d-table mx-auto">
                     <div class="about-items d-inline d-md-flex">
@@ -84,7 +86,7 @@
 
     </div>
 </div>
-<hr class="col-12 col-md-10 col-lg-8 mx-auto mt-5">
+<hr class= "col-8 mx-auto mt-5">
 
 <div id="attend" class="section py-2 animated">
     <div class="section-default">
@@ -118,7 +120,7 @@
                 <li class="col-12 col-md-10 col-lg-8 my-5 d-table mx-auto">
                     <div class="about-items d-flex flex-column">
                         <h2 class="color-accent ">WHY</h2>
-                        <ul class="mr-3">
+                        <ul class="ml-4">
                             <li class="mb-0 text-white">Apply your academic knowledge to a real life business simulation</li>
                             <li class="mb-0 text-white">Compete for a chance to win $300 and a mentorship opportunity with senior students at UTSC</li>
                             <li class="mb-0 text-white">Listen to upper year students at the university share their tips and tricks for a smooth transition into university</li>
@@ -131,53 +133,85 @@
     </div>
 </div>
 
-<hr class="col-12 col-md-10 col-lg-8 mx-auto mt-5">
+<!--<hr class= "col-8 mx-auto mt-5">-->
 
-<div id="gallery" class="section py-2 animated mb-4">
-    <div class="container-fluid gallery-container">
-        <h1 class="text-white text-center section-header">Photos From FLC 2015 / 2016</h1>
-        <div class="previous-years-gallery col-lg-10 col-xl-8 mx-auto">
-            <div>
-                <img class="mx-auto img-fluid" src="img/flc/flcphoto1.jpg">
-            </div>
-            <div>
-                <img class="mx-auto img-fluid" src="img/flc/flcphoto2.jpg">
-            </div>
-            <div>
-                <img class="mx-auto img-fluid" src="img/flc/flcphoto3.jpg">
-            </div>
-            <div>
-                <img class="mx-auto img-fluid" src="img/flc/flcphoto4.jpg">
-            </div>
-            <div>
-                <img class="mx-auto img-fluid" src="img/flc/flcphoto5.jpg">
-            </div>
-            <div>
-                <img class="mx-auto img-fluid" src="img/flc/flcphoto6.jpg">
-            </div>
-        </div>
-    </div>
-</div>
+<!--<div id="gallery" class="section py-2 animated mb-4">-->
+    <!--<div class="container-fluid gallery-container">-->
+        <!--<h1 class="text-white text-center section-header">Photos From FLC 2015 / 2016</h1>-->
+        <!--<div class="previous-years-gallery col-lg-10 col-xl-8 mx-auto">-->
+            <!--<div>-->
+                <!--<img class="mx-auto img-fluid" src="img/flc/flcphoto1.jpg">-->
+            <!--</div>-->
+            <!--<div>-->
+                <!--<img class="mx-auto img-fluid" src="img/flc/flcphoto2.jpg">-->
+            <!--</div>-->
+            <!--<div>-->
+                <!--<img class="mx-auto img-fluid" src="img/flc/flcphoto3.jpg">-->
+            <!--</div>-->
+            <!--<div>-->
+                <!--<img class="mx-auto img-fluid" src="img/flc/flcphoto4.jpg">-->
+            <!--</div>-->
+            <!--<div>-->
+                <!--<img class="mx-auto img-fluid" src="img/flc/flcphoto5.jpg">-->
+            <!--</div>-->
+            <!--<div>-->
+                <!--<img class="mx-auto img-fluid" src="img/flc/flcphoto6.jpg">-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</div>-->
+
+<button id="end-register-button" class="identifier-button d-table mx-auto my-4" type="button"  data-toggle="modal" data-target="#register">Register</button>
+
 
 <div id="contact" class="section py-2 animated">
     <div class="container-fluid mb-5">
         <h1 class="text-white text-center section-header">Contact</h1>
-        <form class="mx-auto d-table col-lg-10 col-xl-7">
-            <div class="form-group">
-                <label for="emailInput" class="text-white">Email address</label>
-                <input type="email" class="form-control" id="emailInput" aria-describedby="emailHelp" placeholder="Enter email">
-                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        <h5 class="text-center text-white mb-2">You have a few options to stay up to date and get in contact with us:</h5>
+        <ul class="d-table mx-auto">
+            <li class="text-white my-2"><a href="mailto:contact@live-competition.org" class = "text-white"><img src="img/email.png" class="mr-2">Email us at contact@live-competition.org</a></li>
+            <li class="text-white my-2"><a href="https://www.facebook.com/LIVECompetition/" class = "text-white"><img src="img/facebook.png" class="mr-2">Visit our Facebook page titled Live Competition</a></li>
+            <li class="text-white my-2"><a href="https://twitter.com/DareToCompete" class = "text-white"><img src="img/twitter.png" class="mr-2">Through our Twitter @DareToCompete</a></li>
+            <li class="text-white my-2"><a href="https://www.instagram.com/livecompetition/" class = "text-white"><img src="img/instagram.png" class="mr-2">You can also follow our Instagram at livecompetition</a></li>
+        </ul>
+    </div>
+</div>
+
+
+
+<div class="modal fade" id="register" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content bg-inverse">
+            <div class="modal-header">
+                <h5 class="modal-title text-white" >LIVE FLC Registration</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true" class="text-white">&times;</span>
+                </button>
             </div>
-            <div class="form-group">
-                <label for="subject" class="text-white">Subject</label>
-                <input type="text" class="form-control" id="subject" placeholder="Subject">
+            <div class="modal-body">
+                <div class="cognito bg-inverse">
+                    <script src="https://services.cognitoforms.com/s/Yn7MYZSYbEy3aKZzPM0CZw"></script>
+                    <script>Cognito.load("forms", { id: "3" });</script>
+                </div>
+                <h3 class="text-white mb-0 mt-4 text-center">Registration Fee</h3>
+                <div class="mx-auto d-table">-->
+                    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                    <input type="hidden" name="cmd" value="_s-xclick">
+                    <input type="hidden" name="hosted_button_id" value="BTZTN89RZZLCG">
+                    <table class="mb-2">
+                    <tr><td class="text-white"><input type="hidden" name="on0" value="First Name">First Name</td></tr><tr><td><input type="text" name="os0" maxlength="200"></td></tr>
+                    <tr><td class="text-white"><input type="hidden" name="on1" value="Last Name">Last Name</td></tr><tr><td><input type="text" name="os1" maxlength="200"></td></tr>
+                    </table>
+                    <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_paynow_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                    <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                    </form>
+                    </div>
+                </div>
+            <div class="modal-body">
+                <p class="text-white">Make sure you complete the info form and payment or your registration will not be complete!</p>
+                <p class="text-white"> If the info form doesn't load you can find it <a href="https://www.cognitoforms.com/LIVECompetition1/LIVEFLCRegistrationForm2017">here</a>.</p>
             </div>
-            <div class="form-group">
-                <label for="exampleTextarea" class="text-white">Your email</label>
-                <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
-            </div>
-            <button type="submit" class="submit-button">Submit</button>
-        </form>
+        </div>
     </div>
 </div>
 

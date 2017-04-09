@@ -22,7 +22,7 @@ $.force_appear();
 
 $('.previous-years-gallery').slick({
     dots: true,
-    adaptiveWidth: true,
+    adaptiveHeight: true,
     infinite: true,
     speed: 500,
     fade: true,
