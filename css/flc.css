@@ -3,6 +3,7 @@ html, body {
     width: 100%;
     background-color: #00aef2;
     font-size: 1.1em;
+    text-align: center;
 }
 
 .jumbotron-flc {
@@ -66,9 +67,9 @@ h1 {
     border: 1px solid white;
 }
 #back-to-top:hover, #back-to-top:hover p {
-    border-color: #ad598b;
+    border-color: #ffad72;
     background-color: transparent;
-    color: #ad598b;
+    color: #ffad72;
 }
 
 #register-button {
@@ -81,7 +82,7 @@ h1 {
 }
 
 #end-register-button {
-    background-color: #ad598b;
+    background-color: #ffad72;
     color: #fff;
 }
 
@@ -92,3 +93,29 @@ h1 {
 li {
     list-style: none;
 }
+
+.uoft {
+    max-height: 300px;
+    width: auto;
+}
+
+#contact {
+    text-align: left;
+}
+
+.text-or {
+    color: #ffad72;
+}
+
+.logo {
+    height: 32px;
+}
+
+.section-header {
+    text-decoration: underline;
+    padding-bottom: 20px;
+    text-decoration-color: #ffad72;
+}
+ #contact .section-header {
+     text-decoration: none;
+ }

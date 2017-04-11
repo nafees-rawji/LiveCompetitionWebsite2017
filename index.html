@@ -1,47 +1,244 @@
 <!doctype html>
 <html class="no-js" lang="">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>LIVE Competition</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,300,400" rel="stylesheet">
 
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
-        <!-- Place favicon.ico in the root directory -->
-        <link rel="stylesheet" href="css/main.css">
-        <link href="https://fonts.googleapis.com/css?family=Nunito:200,300,400" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick-theme.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/flc.css">
+    <link rel="stylesheet" href="css/animate.css">
 
-        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
-    </head>
-    <body>
-        <!--[if lt IE 8]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
+    <link href="https://unpkg.com/nanogallery2@1.2.1/dist/css/nanogallery2.min.css" rel="stylesheet" type="text/css">
 
-        <!-- Add your site or application content here -->
-        <div class="container">
-            <div class="identifier-buttons">
-                <h1 class="homepage-title">Yo, What Are You Doing Here?</h1>
-                <a class="identifier-button" href="delegate.html">I'm a Delegate</a>
-                <a class="identifier-button" href="sponsor.html">I'm a Sponsor</a>
-            </div>
+</head>
+<body>
+<!--[if lt IE 8]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+
+<!--⬇ -->
+<div id="home" style="position: absolute; top: 0;" href="#top"></div>
+<a id="back-to-top" class="rounded-circle hidden-md-down" href="#home"><p>⬆</p></a>
+
+
+<nav class="navbar navbar-toggleable-md bg-inverse  navigation fixed-top py-3 py-lg-2">
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon text-white">&#9776</span>
+    </button>
+    <a class="navbar-brand text-white py-0" href="#">
+        <img src="img/livelogo.png" width="30" height="30" class="d-inline-block align-top mr-2" alt="live-logo">
+        <!--Live Competition 2017-->
+        FLC 2017
+    </a>
+
+    <div class="collapse navbar-collapse float-right" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+                <a class="nav-link " href="#home">Home</a>
+                <a class="nav-link" href="#flc">FLC</a>
+                <a class="nav-link" href="#attend">5 Ws</a>
+                <!--<a class="nav-link mr-1" href="#gallery">Gallery</a>-->
+                <a class="nav-link" href="#contact">Contact</a>
+                <button id="register-button" type="button" class="nav-link emphasized-nav-item p-2" data-toggle="modal" data-target="#register">Register</button>
+
+            <!--<a class="nav-link emphasized-nav-item p-2" href="#register">Register</a>-->
+        </ul>
+
+    </div>
+</nav>
+
+<div class="jumbotron jumbotron-flc jumbotron-fluid mb-0"  style="margin-top: 100px;">
+    <div class="container">
+
+        <div class="jumbotron-items">
+            <h1 class="text-white jumbotron-title">FUTURE LEADERS CHALLENGE 2017</h1>
+            <h3 class="text-white mt-3 d-table mx-auto">Hosted By</h3>
+        </div>
+    </div>
+    <img class="img-fluid d-table mx-auto my-4 uoft" src="img/UofT-Sc-logo.svg.png">
+</div>
+
+<div id="flc" class="section py-2 animated">
+    <div id="about-content" class="section-default">
+        <div class="container-fluid">
+            <h1 class="text-white text-center section-header">What is FLC?</h1>
+            <ul class="about-list px-0">
+                <li class="col-12 col-md-10 col-lg-8 my-5 ml-0 d-table mx-auto">
+                    <div class="about-items d-inline d-md-flex">
+                        <p class="mb-0 text-white d-inline-block">Imagine being a part of a senior management team of a developing business that is currently taking the corporate world by storm. As top management, you have full autonomy in making decisions regarding profits and market share, and will compete head to head with lead competitors of the industry. Now imagine, you are given the opportunity to do all of that in the next few weeks…
+                        </p>
+                    </div>
+                </li>
+                <li class="col-12 col-md-10 col-lg-8 my-5 ml-0 d-table mx-auto">
+                    <div class="about-items d-inline d-md-flex">
+                        <p class="mb-0 text-white d-inline-block">The Future Leaders Challenge (FLC) is an innovative business case competition designed to give high school students with a passion for business the opportunity to face the risk, challenges, and rewards of managing their own companies. As the high school level counterpart of the University of Toronto’s LIVE Competition, FLC is focused on developing both the personal and professional skills like no other competition.</p>
+                    </div>
+                </li>
+                <li class="col-12 col-md-10 col-lg-8 my-5 ml-0 d-table mx-auto">
+                    <div class="about-items d-inline d-md-flex">
+                        <p class="mb-0 text-white d-inline-block">Register by April 30, 2017 to secure your spot at FLC 2017.</p>
+                    </div>
+                </li>
+            </ul>
         </div>
 
-        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
+    </div>
+</div>
+<hr class= "col-8 mx-auto mt-5">
 
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='https://www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
-        </script>
-    </body>
+<div id="attend" class="section py-2 animated">
+    <div class="section-default">
+        <div class="container-fluid">
+            <h1 class="text-white text-center section-header">5Ws to take the W</h1>
+            <ul class="about-list px-0">
+                <li class="col-12 col-md-10 col-lg-8 my-5 d-table mx-auto">
+                    <div class="about-items d-flex flex-column">
+                        <h2 class="text-white ">WHO</h2>
+                        <p class="mb-0 text-white">FLC is open to students in grade 11 or 12 in high schools all across Canada. Delegates compete in teams of 4 to take on the role of a senior management team.</p>
+                    </div>
+                </li>
+                <li class="col-12 col-md-10 col-lg-8 my-5 d-table mx-auto">
+                    <div class="about-items d-flex flex-column">
+                        <h2 class="text-white ">WHAT</h2>
+                        <p class="mb-0 text-white">As one of Canada’s largest multidisciplinary case competitions, FLC gives you the opportunity to explore various fields of business such as accounting, finance, human resources, and marketing, which is not only a great way to demonstrate your strengths, but the ability to simultaneously learn about the countless opportunities in the world of business.</p>
+                    </div>
+                </li>
+                <li class="col-12 col-md-10 col-lg-8 my-5 d-table mx-auto">
+                    <div class="about-items d-flex flex-column">
+                        <h2 class="text-white ">WHERE</h2>
+                        <p class="mb-0 text-white">University of Toronto Scarborough – Instructional Centre</p>
+                    </div>
+                </li>
+                <li class="col-12 col-md-10 col-lg-8 my-5 d-table mx-auto">
+                    <div class="about-items d-flex flex-column">
+                        <h2 class="text-white ">WHEN</h2>
+                        <p class="mb-0 text-white">Saturday May 13, 2017 from 9:00am to 5:30pm</p>
+                    </div>
+                </li>
+                <li class="col-12 col-md-10 col-lg-8 my-5 d-table mx-auto">
+                    <div class="about-items d-flex flex-column">
+                        <h2 class="text-white ">WHY</h2>
+                        <ul class="ml-0 pl-0">
+                            <li class="mb-0 text-white">Apply your academic knowledge to a real life business simulation</li>
+                            <li class="mb-0 text-white">Compete for a chance to win $300 and a mentorship opportunity with senior students at UTSC</li>
+                            <li class="mb-0 text-white">Listen to upper year students share their tips and tricks for a smooth transition into university</li>
+                            <li class="mb-0 text-white">Add it to your resume! </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<div id="gallery" class="section py-2 mb-5 animated">
+    <h1 class="text-white text-center section-header">FLC 2015/2016 Gallery</h1>
+
+    <div id="nanogallery2" data-nanogallery2='{
+            "thumbnailHeight": 210, "thumbnailWidth": 210,
+            "thumbnailL1GutterWidth": 90,
+            "thumbnailL1GutterHeight": 90,
+            "itemsBaseURL": "img/flc/",
+            "thumbnailStacks": 4,
+            "thumbnailStacksTranslateZ": 0.3,
+            "thumbnailStacksRotateX": 0.9,
+            "galleryBuildInit2": "perspective_900px|perspective-origin_50% 150%",
+            "thumbnailHoverEffect2": "thumbnail_translateZ_0px_100px_easeOutQuad_400 | thumbnail_rotateX_0deg_10deg_easeOutBack_200 | thumbnail_rotateX_10deg_0deg_delay250_keyframe_hoverin_easeOutBack_400"
+          }'>
+        <a href="flcphoto1.jpg" data-ngthumb="flcphoto1.jpg"></a>
+        <a href="flcphoto2.jpg" data-ngthumb="flcphoto2.jpg"></a>
+        <a href="flcphoto3.jpg" data-ngthumb="flcphoto3.jpg"></a>
+        <a href="flcphoto4.jpg" data-ngthumb="flcphoto4.jpg"></a>
+        <a href="flcphoto5.jpg" data-ngthumb="flcphoto5.jpg"></a>
+        <a href="flcphoto6.jpg" data-ngthumb="flcphoto6.jpg"></a>
+        <a href="flcphoto7.jpg" data-ngthumb="flcphoto7.jpg"></a>
+        <a href="flcphoto8.jpg" data-ngthumb="flcphoto8.jpg"></a>
+        <a href="flcphoto9.jpg" data-ngthumb="flcphoto9.jpg"></a>
+        <a href="flcphoto10.jpg" data-ngthumb="flcphoto10.jpg"></a>
+    </div>
+</div>
+
+<button id="end-register-button" class="identifier-button d-table mx-auto my-5" type="button"  data-toggle="modal" data-target="#register">Register</button>
+
+
+<div id="contact" class="section py-2 animated">
+    <div class="container-fluid mb-5">
+        <h1 class="text-white text-center section-header">Contact</h1>
+        <h5 class="text-center text-white mb-2">You have a few options to stay up to date and get in contact with us:</h5>
+        <ul class="d-table mx-auto">
+            <li class="text-or my-2"><a href="mailto:contact@live-competition.org" class = "text-or"><img src="img/email.png" class="logo mr-2">contact@live-competition.org</a></li>
+            <li class="text-or my-2"><a href="https://www.facebook.com/LIVECompetition/" class = "text-or"><img src="img/facebook.png" class="logo mr-2">LIVE Competition</a></li>
+            <li class="text-or my-2"><a href="https://twitter.com/DareToCompete" class = "text-or"><img src="img/twitter.png" class="logo mr-2">@DareToCompete</a></li>
+            <li class="text-or my-2"><a href="https://www.instagram.com/livecompetition/" class = "text-or"><img src="img/instagram.png" class="logo mr-2">livecompetition</a></li>
+        </ul>
+    </div>
+</div>
+
+
+
+<div class="modal fade" id="register" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content bg-inverse">
+            <div class="modal-header">
+                <h5 class="modal-title text-white" >LIVE FLC Registration</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true" class="text-white">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="cognito bg-inverse">
+                    <script src="https://services.cognitoforms.com/s/Yn7MYZSYbEy3aKZzPM0CZw"></script>
+                    <script>Cognito.load("forms", { id: "3" });</script>
+                </div>
+                <h3 class="text-white mb-0 mt-4 text-center">Registration Fee</h3>
+                <div class="mx-auto d-table">-->
+                    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                    <input type="hidden" name="cmd" value="_s-xclick">
+                    <input type="hidden" name="hosted_button_id" value="BTZTN89RZZLCG">
+                    <table class="mb-2">
+                    <tr><td class="text-white"><input type="hidden" name="on0" value="First Name">First Name</td></tr><tr><td><input type="text" name="os0" maxlength="200"></td></tr>
+                    <tr><td class="text-white"><input type="hidden" name="on1" value="Last Name">Last Name</td></tr><tr><td><input type="text" name="os1" maxlength="200"></td></tr>
+                    </table>
+                    <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_paynow_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                    <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                    </form>
+                    </div>
+                </div>
+            <div class="modal-body">
+                <p class="text-white">Make sure you complete the info form and payment or your registration will not be complete!</p>
+                <p class="text-white"> If the info form doesn't load you can find it <a href="https://www.cognitoforms.com/LIVECompetition1/LIVEFLCRegistrationForm2017">here</a>.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script
+    src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+<script type="text/javascript" src="https://unpkg.com/nanogallery2@1.2.1/dist/jquery.nanogallery2.min.js"></script>
+<script src="js/plugins.js"></script>
+<!--<script src="js/main.js"></script>-->
+<script src="js/flc.js"></script>
+<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+<script>
+    (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+        function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+        e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+        e.src='https://www.google-analytics.com/analytics.js';
+        r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+    ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+</script>
+</body>
 </html>
