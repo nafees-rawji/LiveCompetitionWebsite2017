@@ -1,9 +1,10 @@
 html, body {
     height: 100%;
     width: 100%;
-    background-color: #00aef2;
+    background-color: #E9EBEE ;
     font-size: 1.1em;
     text-align: center;
+    font-family: Avenir !important;
 }
 
 .jumbotron-flc {
@@ -14,9 +15,7 @@ html, body {
     background-color: transparent;
 }
 
-#back-to-top {
-    background-color: transparent;
-}
+
 
 .general-button {
     background-color: #ad0f37;
@@ -82,12 +81,12 @@ h1 {
 }
 
 #end-register-button {
-    background-color: #ffad72;
+    background-color: #00acd3;;
     color: #fff;
 }
 
 #end-register-button:hover {
-    background-color: #934c76;
+    background-color: #01799a;
 }
 
 li {
@@ -111,11 +110,21 @@ li {
     height: 32px;
 }
 
+.text-blue {
+    color: #00acd3;
+}
+
 .section-header {
-    text-decoration: underline;
-    padding-bottom: 20px;
-    text-decoration-color: #ffad72;
+    color: #00acd3;
 }
  #contact .section-header {
      text-decoration: none;
  }
+#banner {
+    width: 100%;
+    margin-top:68px
+}
+
+.jumbotron {
+    color:#00acd3;
+}

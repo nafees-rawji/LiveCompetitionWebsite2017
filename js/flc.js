@@ -44,11 +44,17 @@ if ( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navig
             "thumbnailStacksRotateX": 0.9,
             "galleryBuildInit2": "perspective_900px|perspective-origin_50% 150%"
           }'>
-        <a href="flcphoto1.jpg" data-ngthumb="flcphoto1.jpg"></a>
-        <a href="flcphoto2.jpg" data-ngthumb="flcphoto2.jpg"></a>
-        <a href="flcphoto3.jpg" data-ngthumb="flcphoto3.jpg"></a>
-        <a href="flcphoto1.jpg" data-ngthumb="flcphoto4.jpg"></a>
-        <a href="flcphoto2.jpg" data-ngthumb="flcphoto5.jpg"></a>
-        <a href="flcphoto3.jpg" data-ngthumb="flcphoto6.jpg"></a>
+        <a href="flcphoto1.jpg" data-ngthumb="flcphoto1tmb-min.jpg"></a>
+        <a href="flcphoto2.jpg" data-ngthumb="flcphoto2tmb-min.jpg"></a>
+        <a href="flcphoto3.jpg" data-ngthumb="flcphoto3tmb-min.jpg"></a>
+        <a href="flcphoto4.jpg" data-ngthumb="flcphoto4tmb-min.jpg"></a>
+        <a href="flcphoto5.jpg" data-ngthumb="flcphoto5tmb-min.jpg"></a>
+        <a href="flcphoto6.jpg" data-ngthumb="flcphoto6tmb-min.jpg"></a>
+        <a href="flcphoto7.jpg" data-ngthumb="flcphoto7tmb-min.jpg"></a>
+        <a href="flcphoto8.jpg" data-ngthumb="flcphoto8tmb-min.jpg"></a>
+        <a href="flcphoto9.jpg" data-ngthumb="flcphoto9tmb-min.jpg"></a>
+        <a href="flcphoto10.jpg" data-ngthumb="flcphoto10tmb-min.jpg"></a>
+        <a href="flcphoto11.jpg" data-ngthumb="flcphoto11tmb-min.jpg"></a>
+        <a href="flcphoto12.jpg" data-ngthumb="flcphoto12tmb-min.jpg"></a>
     </div>`)
 }
