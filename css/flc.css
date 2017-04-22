@@ -128,3 +128,11 @@ li {
 .jumbotron {
     color:#00acd3;
 }
+
+/*#faq {*/
+    /*opacity: 1;*/
+/*}*/
+
+.question {
+    text-align: left;
+}

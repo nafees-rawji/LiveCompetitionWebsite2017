@@ -4,7 +4,11 @@
     font-weight: normal;
 }
 
-
+@font-face {
+    font-family: Avenir;
+    src: url(../fonts/avenir/Avenir-Heavy.woff);
+    font-weight: bold;
+}
 
 /*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
 
@@ -350,17 +354,15 @@ h1 {
     font-weight: 200;
     height: 20px;
 }
-.container {
+.center-items {
+    flex-direction: column;
     height: 100%;
     width: 100%;
     display: flex;
-
+    justify-content: center;
 }
 
-.identifier-buttons {
-    margin: 0 auto;
-    align-self: center;
-}
+
 
 .identifier-button {
     background: #358dbd;
@@ -368,19 +370,18 @@ h1 {
     border-radius: 28px;
     font-family: Arial;
     color: #ffffff;
-    font-size: 30px;
+    font-size: 2em;
     padding: 20px 30px 20px 30px;
     text-decoration: none;
-    margin: 10px;
     font-weight: 200;
 }
 
 .identifier-button:hover {
     background: #3cb0fd;
     text-decoration: none;
+    color: white;
 }
 .homepage-title {
-    margin: 60px 0;
     text-align: center;
     color: white;
 }
@@ -417,6 +418,7 @@ DELEGATES & SPONSORS
     border: 2px solid white;
     color: white;
     transition: background-color 0.5s ease;
+    font-weight: 400!important;
 }
 
 
@@ -499,12 +501,6 @@ DELEGATES & SPONSORS
     align-items: center;
 }
 
-.about-image {
-    border: solid 1px white;
-    padding: 2em;
-    border-radius: 40%;
-}
-
 /*Sponsors*/
 #sponsors {
     background-color: #777777;
@@ -529,6 +525,10 @@ DELEGATES & SPONSORS
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+}
+
+#who-are-we-content {
+    display: none;
 }
 
 
@@ -575,6 +575,28 @@ DELEGATES & SPONSORS
     width: 128px;
 }
 
-#who-are-we-content {
-    display: none;
+
+
+.inverse {
+    background-color: transparent;
+}
+#contact li {
+    list-style: none;
+}
+.left-contact {
+    width: 50%;
+    height: inherit;
+    margin: auto 0;
+    border-right: solid 1px white;
+    float: left;
+}
+
+.right-contact{
+    margin: auto 0;
+    width: 50%;
+    float: right;
+}
+
+.logo {
+    height: 40px;
 }
