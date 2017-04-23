@@ -304,6 +304,11 @@ textarea {
         page-break-after: avoid;
     }
 }
+
+.text-blue {
+    color: #01799A;
+}
+
 #back-to-top {
     background: none;
 
@@ -501,6 +506,31 @@ DELEGATES & SPONSORS
     align-items: center;
 }
 
+.right-border {
+    border-right: solid 2px #01799A;
+}
+
+.left-border {
+    border-left: solid 2px #01799A;
+}
+
+.involved-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.involved-list-item {
+    padding-left: 1em;
+    text-indent: -.7em;
+    color: white;
+}
+
+.involved-list-item::before {
+    content: "• ";
+    color: #01799A; /* or whatever color you prefer */
+}
+
 /*Sponsors*/
 #sponsors {
     background-color: #777777;
@@ -567,7 +597,7 @@ DELEGATES & SPONSORS
 }
 
 #gallery {
-    background-color: #a0a0a0;
+    background-color: #dadada;
 }
 
 .card-img-top {
