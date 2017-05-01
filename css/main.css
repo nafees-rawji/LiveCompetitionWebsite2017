@@ -562,6 +562,11 @@ DELEGATES & SPONSORS
 }
 
 
+.speaker {
+    height: 277px;
+    width: 341px;
+}
+
 /*Contact*/
 
 #contact {
@@ -630,3 +635,5 @@ DELEGATES & SPONSORS
 .logo {
     height: 40px;
 }
+
+
