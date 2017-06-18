@@ -688,7 +688,7 @@ DELEGATES & SPONSORS
 }
 
 .past-cbm-text {
-    width: 80%;
+    width:  55vw;
 }
 
 @media
@@ -696,15 +696,6 @@ DELEGATES & SPONSORS
 (min-resolution: 192dpi) {
     .past-cbm-text {
         width: 100%;
-        text-align: right;
-    }
-}
-
-@media
-(-webkit-max-device-pixel-ratio: 1.15),
-(min-width: 1450px) {
-    .past-cbm-text {
-        width: 55%;
     }
 }
 
