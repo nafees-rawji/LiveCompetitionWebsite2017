@@ -316,6 +316,10 @@ textarea {
     color: #01799A;
 }
 
+.text-bright-blue {
+    color: rgb(69, 211, 228);
+}
+
 #back-to-top {
     background: none;
 
