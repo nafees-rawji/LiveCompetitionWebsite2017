@@ -563,9 +563,9 @@ DELEGATES & SPONSORS
     flex: none;
     box-sizing: content-box;
     /*background-color: rgba(10, 88, 155, 0.3);*/
-    margin: 20px;
-    width: 200px;
-    height: 200px;
+    margin: 15px;
+    width: 150px;
+    height: 150px;
     border: solid 20px rgba(0, 0 , 0,  0);
     background-size: contain;
     background-repeat: no-repeat;
@@ -658,6 +658,11 @@ DELEGATES & SPONSORS
     -webkit-animation-iteration-count: infinite;
 }
 
+.cbm-banner {
+    width: 815px;
+    max-width: 100%;
+}
+
 .cbm-jumbotron {
     background: transparent;
 }
@@ -699,4 +704,7 @@ DELEGATES & SPONSORS
     }
 }
 
-
+.cbm-small-icon {
+    width: 50px;
+    margin-right: 1rem;
+}
