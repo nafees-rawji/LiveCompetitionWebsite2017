@@ -16,7 +16,7 @@ $(document).ready(function(){
     // });
 
     var scroll = 0;
-    var jumbotron = $('.jumbotron-main');
+    var jumbotron = $('.jumbotron');
     if (jumbotron.length != 0){
         $(document).scroll(function() {
             //get how far the user has scrolled

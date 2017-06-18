@@ -10,6 +10,13 @@
     font-weight: bold;
 }
 
+
+@-webkit-keyframes greenPulse {
+    from { background-color: #01799a;}
+    50% { background-color: #4bd5c8;}
+    to { background-color: #01799a;}
+}
+
 /*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
 
 /*
@@ -642,6 +649,62 @@ DELEGATES & SPONSORS
 
 .logo {
     height: 40px;
+}
+
+
+.cbm {
+    -webkit-animation-name: greenPulse;
+    -webkit-animation-duration: 4s;
+    -webkit-animation-iteration-count: infinite;
+}
+
+.cbm-jumbotron {
+    background: transparent;
+}
+
+.cbm-content {
+    margin: 0px 70px;
+}
+
+.cbm-gallery {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.cmb-card {
+    display: inline-block;
+    width: 320px;
+    border: 3px solid white;
+}
+
+.cmb-image {
+    display: block;
+    width: 128px;
+    margin: 0 auto;
+}
+
+.past-cbm-text {
+    width: 80%;
+}
+
+@media
+(-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) {
+    .past-cbm-text {
+        width: 100%;
+    }
+}
+
+@media
+(-webkit-max-device-pixel-ratio: 1.15),
+(min-width: 1450px) {
+    .past-cbm-text {
+        width: 55%;
+    }
 }
 
 
