@@ -696,6 +696,7 @@ DELEGATES & SPONSORS
 (min-resolution: 192dpi) {
     .past-cbm-text {
         width: 100%;
+        text-align: right;
     }
 }
 
