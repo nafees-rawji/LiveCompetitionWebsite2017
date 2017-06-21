@@ -378,8 +378,6 @@ h1 {
     justify-content: center;
 }
 
-
-
 .identifier-button {
     background: #358dbd;
     border: none;
@@ -401,6 +399,51 @@ h1 {
     text-align: center;
     color: white;
 }
+
+.svg-wrapper {
+    height: 60px;
+    margin: 0 auto;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 320px;
+}
+
+.shape {
+    fill: transparent;
+    stroke-dasharray: 140 540;
+    stroke-dashoffset: -474;
+    stroke-width: 8px;
+    stroke: #19f6e8;
+}
+
+.text {
+    color: #fff;
+    font-size: 22px;
+    letter-spacing: 8px;
+    line-height: 32px;
+    position: relative;
+    top: -44px;
+}
+
+@keyframes draw {
+    0% {
+        stroke-dasharray: 140 540;
+        stroke-dashoffset: -474;
+        stroke-width: 8px;
+    }
+    100% {
+        stroke-dasharray: 760;
+        stroke-dashoffset: 0;
+        stroke-width: 3px;
+    }
+}
+
+.svg-wrapper .shape {
+    -webkit-animation: 1s draw linear forwards;
+    animation: 1s draw linear forwards;
+}
+
 
 /********************************************
 DELEGATES & SPONSORS
@@ -712,3 +755,11 @@ DELEGATES & SPONSORS
     width: 50px;
     margin-right: 1rem;
 }
+
+html, body {
+    background: #333;
+    height: 100%;
+    overflow: hidden;
+    text-align: center;
+}
+
