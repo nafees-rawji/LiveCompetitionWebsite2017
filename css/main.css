@@ -375,8 +375,13 @@ h1 {
     height: 100%;
     width: 100%;
     display: flex;
+    display: -webkit-flex; /* Safari */
     justify-content: center;
+    -webkit-justify-content: center; /* Safari 6.1+ */
+    align-items: center;
+
 }
+
 
 .identifier-button {
     background: #358dbd;
@@ -418,6 +423,7 @@ h1 {
 }
 
 .text {
+    text-align: center;
     color: #fff;
     font-size: 22px;
     letter-spacing: 8px;
@@ -755,11 +761,3 @@ DELEGATES & SPONSORS
     width: 50px;
     margin-right: 1rem;
 }
-
-html, body {
-    background: #333;
-    height: 100%;
-    overflow: hidden;
-    text-align: center;
-}
-
