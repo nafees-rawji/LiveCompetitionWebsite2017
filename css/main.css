@@ -414,7 +414,7 @@ h1 {
     stroke-dasharray: 140 540;
     stroke-dashoffset: -474;
     stroke-width: 8px;
-    stroke: #19f6e8;
+    stroke: #358dbd;
 }
 
 .text {
@@ -435,7 +435,7 @@ h1 {
     100% {
         stroke-dasharray: 760;
         stroke-dashoffset: 0;
-        stroke-width: 3px;
+        stroke-width: 4px;
     }
 }
 
