@@ -11,10 +11,10 @@
 }
 
 
-@-webkit-keyframes greenPulse {
-    from { background-color: #01799a;}
-    50% { background-color: #4bd5c8;}
-    to { background-color: #01799a;}
+@-webkit-keyframes bluePulse {
+    from { background-color: #19f6e8;}
+    50% { background-color: #01799a;}
+    to { background-color: #19f6e8;}
 }
 
 /*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
@@ -317,7 +317,7 @@ textarea {
 }
 
 .text-bright-blue {
-    color: rgb(69, 211, 228);
+    color: #19f6e8;
 }
 
 #back-to-top {
@@ -384,9 +384,8 @@ h1 {
 
 
 .identifier-button {
-    background: #358dbd;
+    background: #15bfb3;
     border: none;
-    border-radius: 28px;
     font-family: Arial;
     color: #ffffff;
     font-size: 2em;
@@ -396,9 +395,9 @@ h1 {
 }
 
 .identifier-button:hover {
-    background: #3cb0fd;
+    background: #01799a;
     text-decoration: none;
-    color: white;
+    color: #fff;
 }
 .homepage-title {
     text-align: center;
@@ -466,7 +465,7 @@ DELEGATES & SPONSORS
 }
 
 .nav-link:hover {
-    color: #01799a;
+    color: #14b7ab;
 }
 
 .nav-link:visited {
@@ -488,7 +487,7 @@ DELEGATES & SPONSORS
 
 
 .emphasized-nav-item:hover {
-    background-color: #01799a;
+    background-color: #14b7ab;
     color: white;
 }
 
@@ -516,7 +515,7 @@ DELEGATES & SPONSORS
     position: absolute;
     top: 0;
     left: 0;
-    background-color: rgba(1, 119, 153, 0.7);
+    background-color: rgba(18, 139, 127, 0.75);
     height: 100%;
     width: 100%;
 }
@@ -575,11 +574,11 @@ DELEGATES & SPONSORS
 }
 
 .right-border {
-    border-right: solid 2px #01799A;
+    border-right: solid 2px #14b7ab;
 }
 
 .left-border {
-    border-left: solid 2px #01799A;
+    border-left: solid 2px #14b7ab;
 }
 
 .involved-list {
@@ -646,7 +645,7 @@ DELEGATES & SPONSORS
     display: table;
     margin: 10px auto;
     color: white;
-    background-color: #01799a;
+    background-color: #14b7ab;
     padding:10px;
     border: none;
 }
@@ -706,7 +705,7 @@ DELEGATES & SPONSORS
 
 
 .cbm {
-    -webkit-animation-name: greenPulse;
+    -webkit-animation-name: bluePulse;
     -webkit-animation-duration: 4s;
     -webkit-animation-iteration-count: infinite;
 }
