@@ -540,7 +540,6 @@ DELEGATES & SPONSORS
     overflow:hidden;
     display: table;
     font-size: 3em;
-    font-weight: 400;
     text-align: center;
 }
 
@@ -780,4 +779,9 @@ DELEGATES & SPONSORS
 .cbm-small-icon {
     width: 50px;
     margin-right: 1rem;
+}
+
+.contact-card {
+    background: transparent;
+    border: solid white 2px;
 }
