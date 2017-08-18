@@ -15,7 +15,7 @@ $(window).resize(function () {
 });
 
 var ringer = {
-    countdown_to: "6/9/2018",
+    countdown_to: "11/09/2017",
     rings: {
         'DAYS': {
             s: 86400000, // mseconds in a day,
@@ -391,7 +391,7 @@ var module, countdown = function (y) {
 
 /* baby js file */
 var count = setInterval(function () {
-    var countdownNow = countdown(Date.now(), new Date(2018, 03, 10, 18)).toString();
+    var countdownNow = countdown(Date.now(), new Date(2017, 11, 09)).toString();
     console.log(countdownNow);
     $("#lameclock p").html(countdownNow);
 }, 1000);
