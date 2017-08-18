@@ -320,6 +320,10 @@ textarea {
     color: #19f6e8;
 }
 
+.wrap-text {
+    word-wrap: break-word;
+}
+
 #back-to-top {
     background: none;
 
@@ -365,6 +369,10 @@ textarea {
 /********************************************
 HOMEPAGE
 **********************************************/
+h1, h2, h3, h4, h5, p {
+    font-weight: 200;
+}
+
 h1 {
     display: block;
     font-weight: 200;
@@ -386,7 +394,6 @@ h1 {
 .identifier-button {
     background: #15bfb3;
     border: none;
-    font-family: Arial;
     color: #ffffff;
     font-size: 2em;
     padding: 20px 30px 20px 30px;
@@ -409,7 +416,6 @@ h1 {
     margin: 0 auto;
     position: relative;
     top: 50%;
-    transform: translateY(-50%);
     width: 320px;
 }
 
@@ -637,6 +643,7 @@ DELEGATES & SPONSORS
 /*Contact*/
 
 .contact-card {
+    width: 100%;
     position: relative;
     top:0;
     background: white;
