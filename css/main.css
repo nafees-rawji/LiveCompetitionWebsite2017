@@ -479,8 +479,11 @@ DELEGATES & SPONSORS
     height: 100%;
     width: 100%;
     display: flex;
+    display:-webkit-box;
+    display:-webkit-flex;
     background: #1a1a1a;
     justify-content: center;
+    -webkit-align-content: center;
 }
 
 .delegate-jumbotron #welcome-to-live-text {
@@ -489,6 +492,9 @@ DELEGATES & SPONSORS
     color: white;
     position: absolute;
     align-self: center;
+    -webkit-align-self: center; /* add prefixed version */
+    -ms-flex-item-align: center; /* add prefixed version */
+    margin-top: -10%;
 }
 
 .jumbotron-main {
