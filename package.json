@@ -1,0 +1,26 @@
+{
+  "name": "livecompetitionwebsite2017",
+  "version": "1.0.0",
+  "description": "The new website for Live Competition 2017",
+  "main": "index.js",
+  "directories": {
+    "doc": "doc"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nafees-rawji/LiveCompetitionWebsite2017.git"
+  },
+  "author": "Nafees Rawji",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nafees-rawji/LiveCompetitionWebsite2017/issues"
+  },
+  "homepage": "https://github.com/nafees-rawji/LiveCompetitionWebsite2017#readme",
+  "dependencies": {
+    "particles.js": "^2.0.0",
+    "typed.js": "^2.0.5"
+  }
+}

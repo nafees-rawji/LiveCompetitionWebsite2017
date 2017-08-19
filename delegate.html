@@ -37,7 +37,7 @@
             <a class="nav-link " href="#home">Home</a>
             <a class="nav-link" href="#about">What Is LIVE</a>
             <!--<a class="nav-link" href="#sponsors-integration">Integration</a>-->
-            <a class="nav-link" href="#gallery">Past Sponsors</a>
+            <a class="nav-link" href="#gallery">Past Partners</a>
             <a class="nav-link emphasized-nav-item inverse p-2" href="#contact">Contact</a>
 
         </ul>
@@ -45,29 +45,20 @@
     </div>
 </nav>
 
-
-<div class="overlay"></div>
-
-<div class="jumbotron jumbotron-main jumbotron-fluid delegate-jumbotron" id="home">
-    <div class="center-items container">
-
-        <div class=>
-            <img class="d-table mx-auto my-2 hidden-md-up" src="img/LIVElogo.png">
-            <h1 class="text-white jumbotron-title"><img class="hidden-sm-down" src="img/LIVElogo.png"> LIVE Competition
-                2017</h1>
-            <h3 class="text-white tagline">Dare To Compete</h3>
-        </div>
-    </div>
+<div class="delegate-jumbotron" id="home">
+        <h1 id="welcome-to-live-text">
+        </h1>
+    <div class='icon-scroll'></div>
 </div>
 
 <div id="about" class="section py-2">
     <div id="about-content" class="section-default">
         <div class="container-fluid">
-            <h1 class="text-white text-center section-header">What Is LIVE?</h1>
+            <h1 class="text-center section-header">What Is LIVE?</h1>
             <ul class="about-list px-0">
                 <li class="col-12 col-md-10 col-lg-8 my-5 d-table mx-auto">
-                    <h5 class="text-white">About Us</h5>
-                    <p class="mb-0 text-white d-inline-block">LIVE is an annual case competition held in downtown
+                    <h5 >About Us</h5>
+                    <p class="mb-0 d-inline-block">LIVE is an annual case competition held in downtown
                         Toronto by the University of Toronto Scarborough, for the brightest undergraduate business
                         students across North America. LIVE is one of Canada's leading multidisciplinary case
                         competitions. Unique to our competition we expose delegates to all areas of business management
@@ -77,8 +68,8 @@
                         case competition across North America. </p>
                 </li>
                 <li class="col-12 col-md-10 col-lg-8 my-5 d-table mx-auto">
-                    <h5 class="text-white">Our Mission</h5>
-                    <p class="mb-0 text-white d-inline-block">LIVE is an annual case competition held in downtown
+                    <h5>Our Mission</h5>
+                    <p class="mb-0 d-inline-block">LIVE is an annual case competition held in downtown
                         LIVE's mission is to strive for innovation in the way we deliver an interactive and rewarding
                         competitive experience for our delegates. We strive for development, not only as a competition
                         but to provide experiences and opportunities for personal development.
@@ -221,9 +212,9 @@
         <div class="col-lg-2"></div>
         <div class="col-md-3 col-lg-2 p-3 d-flex align-items-stretch" >
             <div class="contact-card animated">
-                <img class="d-table mx-2 mx-auto" src="img/email.png">
-                <h5 class="text-bright-blue my-2 text-center">Email</h5>
-                <hr class="text-bright-blue">
+                <img class="d-table mx-2 mx-auto contact-icon" src="img/email.png">
+                <h5 class="text-white my-2 text-center">Email</h5>
+                <hr>
                 <div class="text-center">
                     <a href="mailto:contact@live-competition.org"
                        class="text-white mx-auto">contact@live-competition.org</a>
@@ -232,9 +223,9 @@
         </div>
         <div class="col-md-3 col-lg-2 p-3 d-flex align-items-stretch">
             <div class="contact-card animated">
-                <img class="d-table mx-2 mx-auto" src="img/facebook.png">
-                <h5 class="text-bright-blue my-2 text-center">Facebook</h5>
-                <hr class="text-bright-blue">
+                <img class="d-table mx-2 mx-auto contact-icon" src="img/facebook.png">
+                <h5 class="text-white my-2 text-center">Facebook</h5>
+                <hr>
                 <div class="text-center">
                     <a href="https://www.facebook.com/LIVECompetition/" class="text-white">LIVE Competition</a>
                 </div>
@@ -242,9 +233,9 @@
         </div>
         <div class="col-md-3 col-lg-2 p-3 d-flex align-items-stretch">
             <div class="contact-card animated">
-                <img class="d-table mx-2 mx-auto" src="img/twitter.png">
-                <h5 class="text-bright-blue my-2 text-center">Twitter</h5>
-                <hr class="text-bright-blue">
+                <img class="d-table mx-2 mx-auto contact-icon" src="img/twitter.png">
+                <h5 class="text-white my-2 text-center">Twitter</h5>
+                <hr>
                 <div class="text-center wrap-text">
                     <a href="https://twitter.com/DareToCompete" class="text-blue text-white">@DareToCompete</a>
                 </div>
@@ -252,9 +243,9 @@
         </div>
         <div class="col-md-3 col-lg-2 p-3 d-flex align-items-stretch">
             <div class="contact-card animated">
-                <img class="d-table mx-2 mx-auto" src="img/instagram.png">
-                <h5 class="text-bright-blue my-2 text-center">Instagram</h5>
-                <hr class="text-bright-blue">
+                <img class="d-table mx-2 mx-auto contact-icon" src="img/instagram.png">
+                <h5 class="text-white my-2 text-center">Instagram</h5>
+                <hr>
                 <div class="text-center">
                     <a href="https://www.instagram.com/livecompetition/" class="text-white">livecompetition</a>
                 </div>
@@ -265,15 +256,17 @@
 
 <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
-
+<script src="node_modules/typed.js/lib/typed.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
         integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
         crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
         integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
         crossorigin="anonymous"></script>
+<script src="node_modules/particles.js/particles.js"></script>
 <script src="js/plugins.js"></script>
 <script src="js/main.js"></script>
+
 <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
 <script>
     (function (b, o, i, l, e, r) {

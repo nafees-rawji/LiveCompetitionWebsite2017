@@ -15,19 +15,19 @@ $(document).ready(function(){
     //     });
     // });
 
-    var scroll = 0;
-    var jumbotron = $('.jumbotron');
-    if (jumbotron.length != 0){
-        $(document).scroll(function() {
-            //get how far the user has scrolled
-            scroll= $(this).scrollTop();
-            if(scroll > jumbotron.height()) {
+    $(function () {
+        $(window).scroll(function () {
+            console.log("Scrolled");
+            console.log($(window).scrollTop());
+            console.log($(window).height());
+            // set distance user needs to scroll before we start fadeIn
+            if ($(window).scrollTop() > $(window).height()) {
                 $('.navigation').css('background-color', 'rgba(0, 0, 0, 0.6)');
             } else {
                 $('.navigation').css('background-color', 'rgba(0, 0, 0, 0)');
             }
         });
-    }
+    });
 
     $('.switch-content-button').click(function () {
         var text = $(this).text();
@@ -42,5 +42,20 @@ $(document).ready(function(){
 
     });
 
+
+    var options = {
+        strings: [ "Welcome to a competition.", "Welcome to^500 an experience.", "Welcome to^500 an opportunity.", "Welcome to^500 LIVE."],
+        startDelay: 0,
+        typeSpeed: 90,
+        backSpeed: 90
+    };
+
+    var typed = new Typed("#welcome-to-live-text", options);
+
+    particlesJS.load('home', 'particles.json', function() {
+        console.log('callback - particles.js config loaded');
+    });
 });
+
+
 
