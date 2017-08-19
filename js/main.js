@@ -45,7 +45,7 @@ $(document).ready(function(){
 
     var options = {
         strings: [ "Welcome to a competition.", "Welcome to^500 an experience.", "Welcome to^500 an opportunity.", "Welcome to^500 LIVE."],
-        startDelay: 0,
+        startDelay: -1,
         typeSpeed: 90,
         backSpeed: 90
     };
