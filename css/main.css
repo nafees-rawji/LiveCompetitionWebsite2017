@@ -749,3 +749,7 @@ Scroll icon
     background: transparent;
     border: solid white 2px;
 }
+.typed-cursor  {
+    display: none;
+}
+

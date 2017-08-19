@@ -44,13 +44,13 @@ $(document).ready(function(){
 
 
     var options = {
-        strings: [ "Welcome to a competition.", "Welcome to^500 an experience.", "Welcome to^500 an opportunity.", "Welcome to^500 LIVE."],
-        startDelay: -1,
+        strings: [ "a competition.", "^500 an experience.", "^500 an opportunity.", "^500 LIVE."],
+        startDelay: 30,
         typeSpeed: 90,
         backSpeed: 90
     };
 
-    var typed = new Typed("#welcome-to-live-text", options);
+    var typed = new Typed("#text-rotate", options);
 
     particlesJS.load('home', 'particles.json', function() {
         console.log('callback - particles.js config loaded');
