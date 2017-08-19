@@ -21,6 +21,7 @@
   "homepage": "https://github.com/nafees-rawji/LiveCompetitionWebsite2017#readme",
   "dependencies": {
     "particles.js": "^2.0.0",
+    "three": "^0.87.1",
     "typed.js": "^2.0.5"
   }
 }

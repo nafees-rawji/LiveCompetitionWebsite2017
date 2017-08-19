@@ -487,11 +487,16 @@ DELEGATES & SPONSORS
 }
 
 .delegate-jumbotron #welcome-to-live-text {
+    position: absolute;
     font-size: 3.5em;
     font-weight: 200;
     color: white;
-    position: absolute;
-    align-self: center;
+    left: 50%;
+    -webkit-transform: translate(0, -50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translatex(-50%);
+    transform: translateX(-50%);
     -webkit-align-self: center; /* add prefixed version */
     -ms-flex-item-align: center; /* add prefixed version */
     margin-top: -10%;
