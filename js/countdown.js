@@ -38,11 +38,11 @@ var ringer = {
             max: 100
         }
     },
-    r_count: 5,
+    r_count: 4,
     r_spacing: 13, // px
     r_size: 150, // px
     r_thickness: 3, // px
-    update_interval: 11, // ms
+    update_interval: 15, // ms
 
 
     init: function () {
@@ -116,7 +116,7 @@ var ringer = {
         $r.ctx.stroke();
 
         // second circle
-        $r.ctx.strokeStyle = "#15bfb3";
+        $r.ctx.strokeStyle = "#00aef2";
         $r.ctx.beginPath();
         $r.ctx.arc(0, 0, $r.r_size / 2, 1.5 * Math.PI, endAngle, 1);
         $r.ctx.lineWidth = $r.r_thickness;

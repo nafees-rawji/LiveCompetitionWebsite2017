@@ -328,7 +328,7 @@ textarea {
 }
 
 .text-bright-blue {
-    color: #19f6e8;
+    color: #00aef2;
 }
 
 .wrap-text {
@@ -361,7 +361,7 @@ h1 {
 
 
 .identifier-button {
-    background: #15bfb3;
+    background: #00aef2;
     border: none;
     color: #ffffff;
     font-size: 2em;
@@ -393,7 +393,7 @@ h1 {
     stroke-dasharray: 140 540;
     stroke-dashoffset: -474;
     stroke-width: 8px;
-    stroke: #19f6e8;
+    stroke: #00aef2;
 }
 
 .text {
