@@ -427,7 +427,6 @@ h1 {
 
 /********************************************
 DELEGATES & SPONSORS
-DELEGATES & SPONSORS
 **********************************************/
 
 
@@ -664,6 +663,10 @@ Scroll icon
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+}
+
+#nestle-logo {
+    width: 250px;
 }
 
 #who-are-we-content {

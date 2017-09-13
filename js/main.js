@@ -55,6 +55,8 @@ $(document).ready(function(){
     particlesJS.load('home', 'particles.json', function() {
         console.log('callback - particles.js config loaded');
     });
+
+    Cognito.load("forms", {id: "4"});
 });
 
 
