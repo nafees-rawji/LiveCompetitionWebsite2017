@@ -680,25 +680,33 @@ Scroll icon
 }
 
 /*Contact*/
+#facebook {
+    background-image: url("../img/facebook.png");
+}
 
-.contact-card {
-    width: 100%;
-    position: relative;
-    top:0;
-    background: white;
-    padding: 30px;
-    transition: all 500ms ease 0s;
-    -webkit-transition: all 500ms ease 0s ;
+#email {
+    background-image: url("../img/email.png");
+}
+
+#insta {
+    background-image: url("../img/instagram.png");
+}
+
+#twitter {
+    background-image: url("../img/twitter.png");
 }
 
 .contact-icon {
+    display: inline-block;
+    opacity: .7;
+    background-size: contain;
     width: 50px;
     height: 50px;
+    margin: 0 10px;
 }
 
-.contact-card:hover {
-    position: relative;
-    top: -20px;
+.contact-icon:hover {
+    opacity: 1;
 }
 
 #contact {
