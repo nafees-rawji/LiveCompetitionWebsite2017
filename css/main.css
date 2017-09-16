@@ -782,3 +782,43 @@ Scroll icon
     display: none;
 }
 
+.experience-gallery {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.experience-card {
+    display: inline-block;
+    width: 500px;
+}
+
+.experience-image {
+    display: block;
+    width: 350px;
+    margin: 0 auto;
+}
+
+.past-cbm-text {
+    width: 80%;
+}
+
+@media
+(-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) {
+    .past-cbm-text {
+        width: 100%;
+    }
+}
+
+@media
+(-webkit-max-device-pixel-ratio: 1.15),
+(min-width: 1450px) {
+    .past-cbm-text {
+        width: 55%;
+    }
+}
+
