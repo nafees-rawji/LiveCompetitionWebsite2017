@@ -391,7 +391,8 @@ var module, countdown = function (y) {
 
 /* baby js file */
 var count = setInterval(function () {
-    var countdownNow = countdown(Date.now(), new Date(2017, 11, 09)).toString();
+    console.log(Date.now().toString());
+    var countdownNow = countdown(Date.now(), new Date(2017, 11, 9)).toString();
     console.log(countdownNow);
     $("#lameclock p").html(countdownNow);
 }, 1000);
