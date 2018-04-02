@@ -11,10 +11,21 @@
 }
 
 
-@-webkit-keyframes greenPulse {
-    from { background-color: #01799a;}
-    50% { background-color: #4bd5c8;}
-    to { background-color: #01799a;}
+@-webkit-keyframes bluePulse {
+    from { background-color: #19f6e8;}
+    50% { background-color: #01799a;}
+    to { background-color: #19f6e8;}
+}
+
+@-webkit-keyframes scroll {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        -webkit-transform: translateY(46px);
+        transform: translateY(46px);
+    }
 }
 
 /*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
@@ -317,54 +328,20 @@ textarea {
 }
 
 .text-bright-blue {
-    color: rgb(69, 211, 228);
+    color: #00aef2;
 }
 
-#back-to-top {
-    background: none;
-
-    margin: 0;
-
-    position: fixed;
-
-    bottom: 20px;
-
-    right: 20px;
-
-    width: 70px;
-
-    height: 70px;
-
-    z-index: 100;
-
-    display: flex;
-    align-items: center;
-    justify-items: center;
-    text-align: center;
-
-    border-radius: 50%;
-    text-decoration: none;
-    background-color: #358dbd;
+.wrap-text {
+    word-wrap: break-word;
 }
 
-#back-to-top:hover {
-    background-color: #00acd3;
-}
-
-#back-to-top p {
-    text-decoration: none;
-    margin: 0 auto;
-    font-size: 2.5rem;
-    color: #ffffff;
-    text-align: center;
-}
-
-#back-to-top p:hover {
-    text-decoration: none;
-}
 /********************************************
 HOMEPAGE
 **********************************************/
+h1, h2, h3, h4, h5, p {
+    font-weight: 200;
+}
+
 h1 {
     display: block;
     font-weight: 200;
@@ -384,10 +361,8 @@ h1 {
 
 
 .identifier-button {
-    background: #358dbd;
+    background: #00aef2;
     border: none;
-    border-radius: 28px;
-    font-family: Arial;
     color: #ffffff;
     font-size: 2em;
     padding: 20px 30px 20px 30px;
@@ -396,9 +371,9 @@ h1 {
 }
 
 .identifier-button:hover {
-    background: #3cb0fd;
+    background: #01799a;
     text-decoration: none;
-    color: white;
+    color: #fff;
 }
 .homepage-title {
     text-align: center;
@@ -410,7 +385,6 @@ h1 {
     margin: 0 auto;
     position: relative;
     top: 50%;
-    transform: translateY(-50%);
     width: 320px;
 }
 
@@ -419,7 +393,7 @@ h1 {
     stroke-dasharray: 140 540;
     stroke-dashoffset: -474;
     stroke-width: 8px;
-    stroke: #19f6e8;
+    stroke: #00aef2;
 }
 
 .text {
@@ -455,6 +429,7 @@ h1 {
 DELEGATES & SPONSORS
 **********************************************/
 
+
 .navigation {
     z-index: 2;
     background-color: rgba(0, 0, 0, 0);
@@ -466,7 +441,7 @@ DELEGATES & SPONSORS
 }
 
 .nav-link:hover {
-    color: #01799a;
+    color: #00aef2;
 }
 
 .nav-link:visited {
@@ -479,7 +454,7 @@ DELEGATES & SPONSORS
 
 .emphasized-nav-item {
     font-size: 1.35em;
-    border-radius: 25px;
+    border-radius: 2px;
     border: 2px solid white;
     color: white;
     transition: background-color 0.5s ease;
@@ -488,7 +463,7 @@ DELEGATES & SPONSORS
 
 
 .emphasized-nav-item:hover {
-    background-color: #01799a;
+    background-color: #00aef2;
     color: white;
 }
 
@@ -500,7 +475,32 @@ DELEGATES & SPONSORS
 }
 
 .delegate-jumbotron {
-    background: url("../img/background-delegate.jpg");
+    height: 100%;
+    width: 100%;
+    display: flex;
+    display:-webkit-box;
+    display:-webkit-flex;
+    background: #1a1a1a;
+}
+
+.delegate-jumbotron #welcome-to-live-text {
+    position: absolute;
+    font-size: 3.5em;
+    font-weight: 200;
+    color: white;
+    width: 100%;
+    text-align: center;
+    top: 30%;
+    left: 50%;
+    -webkit-transform: translate(0, -50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translatex(-50%);
+    transform: translateX(-50%);
+    align-self: center;
+    -webkit-align-self: center; /* add prefixed version */
+    -ms-flex-item-align: center; /* add prefixed version */
+    /*margin-top: -10%;*/
 }
 
 .jumbotron-main {
@@ -516,7 +516,7 @@ DELEGATES & SPONSORS
     position: absolute;
     top: 0;
     left: 0;
-    background-color: rgba(1, 119, 153, 0.7);
+    background-color: rgba(18, 139, 127, 0.75);
     height: 100%;
     width: 100%;
 }
@@ -535,8 +535,43 @@ DELEGATES & SPONSORS
     overflow:hidden;
     display: table;
     font-size: 3em;
-    font-weight: 400;
     text-align: center;
+}
+
+/**
+Scroll icon
+ */
+.icon-scroll, .icon-scroll:before {
+    position: absolute;
+    top: 100%;
+}
+.icon-scroll {
+    width: 40px;
+    height: 70px;
+    top: 100%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    margin-top: -120px;
+    box-shadow: inset 0 0 0 1px #fff;
+    border-radius: 25px;
+}
+
+.icon-scroll:before {
+    content: '';
+    width: 8px;
+    height: 8px;
+    background: #fff;
+    left: 50%;
+    margin-left: -4px;
+    top: 10px;
+    border-radius: 4px;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-name: scroll;
 }
 
 .tagline {
@@ -562,6 +597,11 @@ DELEGATES & SPONSORS
 }
 
 /*About*/
+
+#about {
+    background: #dadada;
+}
+
 .about-list {
     width: 100%;
     list-style: none;
@@ -575,11 +615,11 @@ DELEGATES & SPONSORS
 }
 
 .right-border {
-    border-right: solid 2px #01799A;
+    border-right: solid 2px #14b7ab;
 }
 
 .left-border {
-    border-left: solid 2px #01799A;
+    border-left: solid 2px #14b7ab;
 }
 
 .involved-list {
@@ -616,19 +656,20 @@ DELEGATES & SPONSORS
     flex: none;
     box-sizing: content-box;
     /*background-color: rgba(10, 88, 155, 0.3);*/
-    margin: 15px;
     width: 150px;
     height: 150px;
-    border: solid 20px rgba(0, 0 , 0,  0);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 }
 
+#nestle-logo {
+    width: 250px;
+}
+
 #who-are-we-content {
     display: none;
 }
-
 
 .speaker {
     height: 277px;
@@ -636,6 +677,34 @@ DELEGATES & SPONSORS
 }
 
 /*Contact*/
+#facebook {
+    background-image: url("../img/facebook.png");
+}
+
+#email {
+    background-image: url("../img/email.png");
+}
+
+#insta {
+    background-image: url("../img/instagram.png");
+}
+
+#twitter {
+    background-image: url("../img/twitter.png");
+}
+
+.contact-icon {
+    display: inline-block;
+    opacity: .7;
+    background-size: contain;
+    width: 50px;
+    height: 50px;
+    margin: 0 10px;
+}
+
+.contact-icon:hover {
+    opacity: 1;
+}
 
 #contact {
     background-color: #1A1A1A;
@@ -646,7 +715,7 @@ DELEGATES & SPONSORS
     display: table;
     margin: 10px auto;
     color: white;
-    background-color: #01799a;
+    background-color: #14b7ab;
     padding:10px;
     border: none;
 }
@@ -678,8 +747,6 @@ DELEGATES & SPONSORS
     width: 128px;
 }
 
-
-
 .inverse {
     background-color: transparent;
 }
@@ -694,7 +761,7 @@ DELEGATES & SPONSORS
     float: left;
 }
 
-.right-contact{
+.right-contact {
     margin: auto 0;
     width: 50%;
     float: right;
@@ -704,27 +771,15 @@ DELEGATES & SPONSORS
     height: 40px;
 }
 
-
-.cbm {
-    -webkit-animation-name: greenPulse;
-    -webkit-animation-duration: 4s;
-    -webkit-animation-iteration-count: infinite;
-}
-
-.cbm-banner {
-    width: 815px;
-    max-width: 100%;
-}
-
-.cbm-jumbotron {
+.contact-card {
     background: transparent;
+    border: solid white 2px;
+}
+.typed-cursor  {
+    display: none;
 }
 
-.cbm-content {
-    margin: 0px 70px;
-}
-
-.cbm-gallery {
+.experience-gallery {
     display: flex;
     list-style-type: none;
     margin: 0;
@@ -733,20 +788,19 @@ DELEGATES & SPONSORS
     flex-wrap: wrap;
 }
 
-.cmb-card {
+.experience-card {
     display: inline-block;
-    width: 320px;
-    border: 3px solid white;
+    width: 500px;
 }
 
-.cmb-image {
+.experience-image {
     display: block;
-    width: 128px;
+    width: 350px;
     margin: 0 auto;
 }
 
 .past-cbm-text {
-    width:  55vw;
+    width: 80%;
 }
 
 @media
@@ -757,7 +811,11 @@ DELEGATES & SPONSORS
     }
 }
 
-.cbm-small-icon {
-    width: 50px;
-    margin-right: 1rem;
+@media
+(-webkit-max-device-pixel-ratio: 1.15),
+(min-width: 1450px) {
+    .past-cbm-text {
+        width: 55%;
+    }
 }
+

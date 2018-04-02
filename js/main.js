@@ -15,19 +15,19 @@ $(document).ready(function(){
     //     });
     // });
 
-    var scroll = 0;
-    var jumbotron = $('.jumbotron');
-    if (jumbotron.length != 0){
-        $(document).scroll(function() {
-            //get how far the user has scrolled
-            scroll= $(this).scrollTop();
-            if(scroll > jumbotron.height()) {
+    $(function () {
+        $(window).scroll(function () {
+            console.log("Scrolled");
+            console.log($(window).scrollTop());
+            console.log($(window).height());
+            // set distance user needs to scroll before we start fadeIn
+            if ($(window).scrollTop() > $(window).height()) {
                 $('.navigation').css('background-color', 'rgba(0, 0, 0, 0.6)');
             } else {
                 $('.navigation').css('background-color', 'rgba(0, 0, 0, 0)');
             }
         });
-    }
+    });
 
     $('.switch-content-button').click(function () {
         var text = $(this).text();
@@ -42,5 +42,53 @@ $(document).ready(function(){
 
     });
 
+
+    var options = {
+        strings: [ "a competition.", "^500 an experience.", "^500 an opportunity.", "^500 LIVE."],
+        startDelay: 30,
+        typeSpeed: 90,
+        backSpeed: 90
+    };
+
+    var typed = new Typed("#text-rotate", options);
+
+    particlesJS.load('home', 'particles.json', function() {
+        console.log('callback - particles.js config loaded');
+    });
+
+    $('.slick-gallery').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        infinite: true,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        responsive: [
+            {
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 800,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
+    })
 });
+
+
 

@@ -11,6 +11,9 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,300,400" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
           integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    // Add the new slick-theme.css if you want the default styling
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
     <link rel="stylesheet" href="css/main.css">
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
@@ -20,9 +23,6 @@
     your browser</a> to improve your experience.</p>
 <![endif]-->
 
-<!--⬇ -->
-
-<a id="back-to-top" href="#home"><p>⬆</p></a>
 
 <nav class="navbar navbar-toggleable-md navigation fixed-top py-3">
     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
@@ -40,212 +40,202 @@
             <a class="nav-link " href="#home">Home</a>
             <a class="nav-link" href="#about">What Is LIVE</a>
             <!--<a class="nav-link" href="#sponsors-integration">Integration</a>-->
-            <a class="nav-link" href="#gallery">Past Sponsors</a>
-            <a class="nav-link emphasized-nav-item inverse p-2" href="#contact">Contact</a>
+            <a class="nav-link" href="#gallery">Our Partners</a>
+            <a class="nav-link mr-2" href="#experience">Experience Live</a>
+            <a class="nav-link text-white emphasized-nav-item inverse p-2" data-toggle="modal"
+               data-target="#exampleModalLong" id="register">Register</a>
 
         </ul>
 
     </div>
 </nav>
 
-
-
-<div class="overlay"></div>
-
-<div class="jumbotron jumbotron-main jumbotron-fluid delegate-jumbotron" id="home">
-    <div class="center-items container">
-
-        <div class=>
-            <img class="d-table mx-auto my-2 hidden-md-up" src="img/LIVElogo.png">
-            <h1 class="text-white jumbotron-title"><img class="hidden-sm-down" src="img/LIVElogo.png"> LIVE Competition
-                2017</h1>
-            <h3 class="text-white tagline">Dare To Compete</h3>
-        </div>
-    </div>
+<div class="delegate-jumbotron" id="home">
+    <h1 id="welcome-to-live-text"> Welcome to
+        <span id="text-rotate"></span>
+    </h1>
+    <div class='icon-scroll'></div>
 </div>
 
-<div id="about" class="section py-2">
+<div id="about" class="py-2">
     <div id="about-content" class="section-default">
         <div class="container-fluid">
-            <h1 class="text-white text-center section-header">What Is LIVE?</h1>
+            <h1 class="text-center section-header">What Is LIVE?</h1>
             <ul class="about-list px-0">
                 <li class="col-12 col-md-10 col-lg-8 my-5 d-table mx-auto">
-                    <h5 class="text-white">About Us</h5>
-                    <p class="mb-0 text-white d-inline-block">LIVE is an annual case competition held in downtown
-                        Toronto by the University of Toronto Scarborough, for the brightest undergraduate business
-                        students across North America. LIVE is one of Canada's leading multidisciplinary case
-                        competitions. Unique to our competition we expose delegates to all areas of business management
-                        through our unique case simulations, networking events, and influential guest speakers. Founded
-                        in 2006, LIVE will be in its 12th year of operations, with over 150 delegates from over 15
-                        universities, over 50 corporate representatives, LIVE has grown into a well-known prestigious
-                        case competition across North America. </p>
-                </li>
-                <li class="col-12 col-md-10 col-lg-8 my-5 d-table mx-auto">
-                    <h5 class="text-white">Our Mission</h5>
-                    <p class="mb-0 text-white d-inline-block">LIVE is an annual case competition held in downtown
-                        LIVE's mission is to strive for innovation in the way we deliver an interactive and rewarding
-                        competitive experience for our delegates. We strive for development, not only as a competition
-                        but to provide experiences and opportunities for personal development.
+                    <h5>About Us</h5>
+                    <p class="mb-0 d-inline-block">LIVE Competition 2017 is Canada’s leading National
+                        Multidisciplinary
+                        Case Competition co-hosted by Nestlé and the University of Toronto. This year’s competition will
+                        welcome 160 of the brightest undergraduate students across North America to participate in our
+                        rigorous competition rounds, networking events, and exciting socials over 2 unforgettable days.
+                        The winning team will be rewarded with a $1,500 cash prize, various swag items from our
+                        partners, and exclusive 1-on-1 mentorships with Senior Corporate Executives from some of the
+                        most successful organizations in North America.
                     </p>
                 </li>
-                <!--<li class="col-12 col-md-10 col-lg-8 my-5 d-table mx-auto">-->
-                <!--<div class="about-items d-inline d-md-flex">-->
-                <!--<img class="d-table mr-4 my-2 mx-auto about-image" src="img/about1.png">-->
-                <!--<p class="ml-md-5 mb-0 text-white d-inline-block">JLorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulv</p>-->
-                <!--</div>-->
-                <!--</li>-->
+                <li class="col-12 col-md-10 col-lg-8 my-5 d-table mx-auto">
+                    <h5>Our Competition</h5>
+                    <p class="mb-0 d-inline-block">Unique to our competition is our real-time Business
+                        Simulation which allows our delegates to compete directly in a Virtual Economy for the chance to
+                        capture market share from their competitors and accumulate profits for their virtual company.
+                        Furthermore, LIVE delegates will also get to experience multiple areas of business management
+                        through our innovative cases, networking events, and influential guest speakers.
+                    </p>
+                </li>
             </ul>
         </div>
-        <a class="general-button switch-content-button text-white h5 cbm" href="cbm.html"> If you are looking to become a Campus Brand Manager Click Here ➡
-        </a>
     </div>
 </div>
-    <!--<button class="general-button switch-content-button" switch-text="Why Live ⬇">Who Are We ⬆</button>-->
-    <!--<div id="who-are-we-content" class="section-alt">-->
-    <!--<div class="container-fluid">-->
-    <!--<h1 class="text-white text-center section-header">Why LIVE?</h1>-->
-    <!--<ul class="about-list px-0">-->
-    <!--<li class="col-12 col-md-10 col-lg-8 my-5 d-table mx-auto">-->
-    <!--<div class="about-items d-inline d-md-flex">-->
-    <!--<img class="d-table mr-4 my-2 mx-auto about-image" src="img/about1.png">-->
-    <!--<p class="ml-md-5 mb-0 text-white d-inline-block">JLorem ipsum dolor sit amet, consectetuer-->
-    <!--adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque-->
-    <!--penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,-->
-    <!--ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec-->
-    <!--pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut,-->
-    <!--imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer-->
-    <!--tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.-->
-    <!--Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante,-->
-    <!--dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius-->
-    <!--laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur-->
-    <!--ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget-->
-    <!--condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam-->
-    <!--quam nunc, blandit vel, luctus pulv</p>-->
-    <!--</div>-->
-    <!--</li>-->
-    <!--</ul>-->
-    <!--</div>-->
-    <!--</div>-->
-</div>
 
-<div id="gallery" class="section py-2">
+<div id="gallery" class="py-2">
+    <h1 class="text-black text-center section-header">Our Title Partner</h1>
+    <div id="title-sponsor" class="col-12 col-md-10 col-lg-8 d-table mx-auto">
+        <img id="nestle-logo" class="d-table mx-auto" src="img/sponsors/NestleLogo.png">
+        <p class="mt-5">This year, we take our case competition to the next level through a very special partnership with Nestlé.
+            LIVE Competition and Nestlé executives are collaborating to deliver one of LIVE Competition’s most ambitious
+            case yet! This round will be distributed to our delegates 3-weeks prior to the competition and will surely
+            prove a challenge to all. The deliverable will take the form of a presentation at LIVE Competition and will
+            be judged by Corporate Representatives from Nestlé.</p>
+    </div>
+
     <div class="section-default">
         <div class="container-fluid">
-            <h1 class="text-black text-center section-header">Past Partners</h1>
-            <div class="sponsors-gallery col-lg-10 col-xl-8">
-                <div class="sponsor" style='background-image: url("img/past_sponsor_logos/sponsor1.png");'>
-                </div>
-                <div class="sponsor" style='background-image: url("img/past_sponsor_logos/sponsor2.png");'>
-                </div>
-                <div class="sponsor" style='background-image: url("img/past_sponsor_logos/sponsor3.png");'>
-                </div>
-                <div class="sponsor" style='background-image: url("img/past_sponsor_logos/sponsor4.png");'>
-                </div>
-                <div class="sponsor" style='background-image: url("img/past_sponsor_logos/sponsor5.png");'>
-                </div>
-                <div class="sponsor" style='background-image: url("img/past_sponsor_logos/sponsor6.png");'>
-                </div>
-                <div class="sponsor" style='background-image: url("img/past_sponsor_logos/sponsor7.png");'>
-                </div>
-                <div class="sponsor" style='background-image: url("img/past_sponsor_logos/sponsor8.png");'>
-                </div>
-                <div class="sponsor" style='background-image: url("img/past_sponsor_logos/sponsor9.png");'>
-                </div>
-                <div class="sponsor" style='background-image: url("img/past_sponsor_logos/sponsor10.png");'>
-                </div>
-                <div class="sponsor" style='background-image: url("img/past_sponsor_logos/sponsor11.png");'>
-                </div>
-                <div class="sponsor" style='background-image: url("img/past_sponsor_logos/sponsor12.png");'>
-                </div>
-                <div class="sponsor" style='background-image: url("img/past_sponsor_logos/sponsor13.png");'>
-                </div>
-                <div class="sponsor" style='background-image: url("img/past_sponsor_logos/sponsor14.png");'>
-                </div>
+            <h1 class="text-black text-center section-header">Our Partners</h1>
+            <div class="slick-gallery col-10 col-xl-8 mx-auto my-4">
+                <a class="sponsor" style="background-image: url('img/sponsors/11.png')" href="http://www.nestle.com/"></a>
+                <a class="sponsor" style="background-image: url('img/sponsors/2.png')" href="https://www.cpacanada.ca"></a>
+                <a class="sponsor" style="background-image: url('img/sponsors/4.png')" href="http://www.fdmgroup.com/ca/"></a>
+                <a class="sponsor" style="background-image: url('img/sponsors/8.png')" href="http://www.mnp.ca/"></a>
+                <a class="sponsor" style="background-image: url('img/sponsors/9.png')" href="http://rogers.com/"></a>
             </div>
         </div>
     </div>
-    <button class="general-button switch-content-button h5" switch-text="Past Partners ⬇">Previous Speakers and Mentors ⬆
-    </button>
-    <div class="section-alt">
+    <div class="section-default">
         <div class="container-fluid">
-            <h1 class="text-black text-center section-header">Previous Speakers and Mentors</h1>
-            <h2 class="text-center text-blue mt-5">Speakers</h2>
-            <div class="sponsors-gallery col-xl-10 col-lg-8">
-                <div class="d-table mx-3 my-4">
-                    <img class="img-fluid mx-auto d-table speaker" src="img/past_speakers/speaker1.png"
-                         alt="Card image cap">
-                    <h2 class="text-center my-2">Don Romano</h2>
-                    <h4 class="text-center">President and CEO of Hyundai Auto Canada Corp.</h4>
-                </div>
-                <div class="d-table mx-3 my-4">
-                    <img class="img-fluid mx-auto d-table speaker" src="img/past_speakers/speaker5.png"
-                         alt="Card image cap">
-                    <h2 class="text-center my-2">Robert Strickland</h2>
-                    <h4 class="text-center">President at Fidelity Investments Canada Limited</h4>
-                </div>
-                <div class="d-table mx-3 my-4">
-                    <img class="img-fluid mx-auto d-table speaker" src="img/past_speakers/speaker4.png"
-                         alt="Card image cap">
-                    <h2 class="text-center my-2">Peter Aceto</h2>
-                    <h4 class="text-center">President and CEO, ING DIRECT Canada</h4>
-                </div>
-            </div>
-            <h2 class="text-center text-blue my-5">Mentors</h2>
-            <div class="sponsors-gallery col-xl-10 col-lg-8">
-                <div class="d-table mx-3 my-4">
-                    <img class="img-fluid mx-auto d-table speaker" src="img/past_speakers/speaker3.png"
-                         alt="Card image cap">
-                    <h2 class="text-center my-2">Gerrard Schmid</h2>
-                    <h4 class="text-center">CEO of D+H</h4>
-                </div>
-                <div class="d-table mx-3 my-4">
-                    <img class="img-fluid mx-auto d-table speaker" src="img/past_speakers/speaker2.png"
-                         alt="Card image cap">
-                    <h2 class="text-center my-2">Scot Adams</h2>
-                    <h4 class="text-center">SVP National Operations of Cadillac Fairview</h4>
-                </div>
-                <div class="d-table mx-3 my-4">
-                    <img class="img-fluid mx-auto d-table speaker" src="img/past_speakers/speaker6.png"
-                         alt="Card image cap">
-                    <h2 class="text-center my-2">Michael Soutter</h2>
-                    <h4 class="text-center">Vice President of Sales at Nissan Canada</h4>
-                </div>
+            <h1 class="text-black text-center section-header">Friends of the Competition</h1>
+            <div class="slick-gallery col-10 col-xl-8 mx-auto my-4">
+                <a class="sponsor" style="background-image: url('img/sponsors/1.png')" href="https://www.chipotle.com/"></a>
+                <a class="sponsor" style="background-image: url('img/sponsors/3.png')"></a>
+                <a class="sponsor" style="background-image: url('img/sponsors/5.png')" href="https://www.foodora.ca/"></a>
+                <a class="sponsor" style="background-image: url('img/sponsors/6.png')" href="http://talentegg.ca/"></a>
+                <a class="sponsor" style="background-image: url('img/sponsors/7.png')" href="https://www.microsoft.com/"></a>
+                <a class="sponsor" style="background-image: url('img/sponsors/10.png')" href="https://www.runningroom.com/"></a>
             </div>
         </div>
     </div>
 </div>
 
 
+<div class="pt-5 mx-sm-down-auto" id="experience">
+    <h1 class="text-white my-5 text-center">Experience Live</h1>
+    <div class="text-white experience-gallery">
+        <div class="experience-card text-center p-3 my-3 mr-3">
+            <img class="experience-image" src="img/experience/prize.jpg">
+            <h4 class="mt-3">Prize</h4>
+            <p>Everyone wins at LIVE, with a first place prize of $1500 and other outstanding prizes through our various contests.</p>
+        </div>
+        <div class="experience-card text-center p-3 my-3 mr-3">
+            <img class="experience-image" src="img/experience/challenge.jpg">
+            <h4 class="mt-3">Challenge</h4>
+            <p>Along side your team, you’ll be challenged with an interactive and intense curriculum that will show your full potential.</p>
+        </div>
+        <div class="experience-card text-center p-3 my-3 mr-3">
+            <img class="experience-image" src="img/experience/network.jpg">
+            <h4 class="mt-3">Network</h4>
+            <p>Exclusively network with LIVE’s sponsors and many other industry professionals.</p>
+        </div>
+        <div class="experience-card text-center p-3 my-3 mr-3">
+            <img class="experience-image" src="img/experience/mentor.jpg">
+            <h4 class="mt-3">Mentor</h4>
+            <p>Each member of the winning team receives a mentorship opportunity with amazing senior corporate executives.</p>
+        </div>
+        <div class="experience-card text-center p-3 my-3 mr-3">
+            <img class="experience-image" src="img/experience/school.jpg">
+            <h4 class="mt-3">School</h4>
+            <p>Represent your University’s top talent at Canada’s leading Multidisciplinary Case Competition.</p>
+        </div>
+        <div class="experience-card text-center p-3 my-3 mr-3">
+            <img class="experience-image" src="img/experience/social.jpg">
+            <h4 class="mt-3">Social</h4>
+            <p>After the competition, enjoy a night in exciting Downtown Toronto at our social events!</p>
+        </div>
+    </div>
+</div>
 
-<div id="contact" class="section py-2 animated">
-    <div class="container-fluid mb-5">
-        <h1 class=" text-center section-header text-white">Contact</h1>
-        <h5 class="text-center text-white mb-2">You have a few options to stay up to date and get in contact with
-            us:</h5>
-        <ul class="d-table mx-auto">
-            <li class="text-blue my-2"><a href="mailto:contact@live-competition.org" class="text-blue"><img
-                src="img/email.png" class="logo mr-2">contact@live-competition.org</a></li>
-            <li class="text-blue my-2"><a href="https://www.facebook.com/LIVECompetition/" class="text-blue"><img
-                src="img/facebook.png" class="logo mr-2">LIVE Competition</a></li>
-            <li class="text-blue my-2"><a href="https://twitter.com/DareToCompete" class="text-blue"><img
-                src="img/twitter.png" class="logo mr-2">@DareToCompete</a></li>
-            <li class="text-blue my-2"><a href="https://www.instagram.com/livecompetition/" class="text-blue"><img
-                src="img/instagram.png" class="logo mr-2">livecompetition</a></li>
-        </ul>
+
+<div class="text-center">
+    <h1 class=" text-center section-header text-white">Mark The Dates</h1>
+    <div class="my-5">
+        <h3 class="text-bright-blue">LIVE COMPETITION</h3>
+        <div class="my-2">
+            <h4 class="text-white">November 9 - 11</h4>
+        </div>
+    </div>
+    <div class="my-5">
+        <h3 class="text-bright-blue">LOCATION</h3>
+        <div class="my-2">
+            <h4 class="text-white">Marriott City Center Hotel</h4>
+            <h4 class="text-white">1 Blue Jays Way, ON, MSV 1J4</h4>
+        </div>
+    </div>
+    <div class="my-5">
+        <h3 class="text-bright-blue">DELEGATE FEE</h3>
+        <div class="my-2">
+            <h4 class="text-white">$210 per delegate</h4>
+        </div>
+    </div>
+</div>
+
+
+<div id="contact">
+    <div class="d-table mx-auto">
+        <a id="email" class="contact-icon" href="mailto:contact@live-competition.org"></a>
+        <a id="facebook" class="contact-icon" href="https://www.facebook.com/LIVECompetition/"></a>
+        <a id="twitter" class="contact-icon" href="https://twitter.com/DareToCompete"></a>
+        <a id="insta" class="contact-icon" href="https://www.instagram.com/livecompetition/"></a>
+    </div>
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+     aria-hidden=/"true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Registration</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="cognito">
+                </div>
+                <p>If the above registration does not load please use this <a href="https://www.cognitoforms.com/LIVECompetition1/LIVECompetition2017RegistrationForm">link</a></p>
+            </div>
+        </div>
     </div>
 </div>
 
 <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
-
+<script src="node_modules/typed.js/lib/typed.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
         integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
         crossorigin="anonymous"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="slick/slick.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
         integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
         crossorigin="anonymous"></script>
+<script src="node_modules/particles.js/particles.js"></script>
 <script src="js/plugins.js"></script>
+<script type="text/javascript" src="slick/slick.min.js"></script>
 <script src="js/main.js"></script>
+<script src="https://services.cognitoforms.com/s/Yn7MYZSYbEy3aKZzPM0CZw"></script>
+<script>Cognito.load("forms", {id: "4"});</script>
+
 <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
 <script>
     (function (b, o, i, l, e, r) {
